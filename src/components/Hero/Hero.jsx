@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <div>Hero</div>
+    <div className="h-100vh">Hero</div>
   )
 }
 

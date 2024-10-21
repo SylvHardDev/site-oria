@@ -1,4 +1,6 @@
 import Logo from "../../assets/logo/logo_blue.png"
+import search from "../../assets/icons/search.png"
+import burger from "../../assets/icons/burger-bar.png"
 import { useState } from 'react';
 import "./Navbar.css"
 
@@ -7,16 +9,16 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white shadow-md">
-      <div className="container mx-auto px-4 flex items-center justify-between h-20">
+      <div className="container mx-auto px-6 flex items-center justify-evenly h-20">
         {/* Logo */}
-        <div className="w flex-shrink-0">
+        <div className="flex-shrink-0">
           <a href="/">
             <img src={Logo} alt="Logo-oria" className="w-72" />
           </a>
         </div>
 
-        {/* Navigation Links - hidden on small screens */}
-        <div className="hidden md:flex space-x-8 text-gray-700">
+        {/* Navigation as - hidden on small screens */}
+        <div className="lien hidden md:flex space-x-8 text-gray-700 m-0">
           <a href="/" className="hover:text-blue-600">ACCUEIL</a>
           <a href="/about" className="hover:text-blue-600">A PROPOS</a>
           <a href="/filiales" className="hover:text-blue-600">NOS FILIALES</a>
@@ -27,20 +29,16 @@ export default function Navbar() {
         {/* Right Section: Search Icon & Mobile Menu Button */}
         <div className="flex items-center space-x-4">
           {/* Search Icon */}
-          <button className="text-gray-600 hover:text-blue-600">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M11 19a8 8 0 100-16 8 8 0 000 16zM21 21l-4.35-4.35" />
-            </svg>
+          <button className="recherche text-gray-600 hover:text-blue-600">
+            <img className="icon-loop" src={search} alt="icone recherche" />
           </button>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-600 hover:text-blue-600 focus:outline-none"
+            className="burger md:hidden text-gray-600 hover:text-blue-600 focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
-            </svg>
+            <img className="icon-burger" src={burger} alt="icone recherche" />
           </button>
         </div>
       </div>

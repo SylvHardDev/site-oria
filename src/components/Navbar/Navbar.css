@@ -5,5 +5,35 @@
 
 a {
   font-family: "Helvetica-Neue";
-  font-size: 16px;
+  font-size: 15px;
+}
+
+.recherche img,
+.burger img{
+  width: 30px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.lien {
+  margin-right: 0;
+}
+
+.active-link {
+  font-weight: bold;
+  color: #1a1a1a; /* couleur du texte actif */
+  position: relative; /* Position relative pour le carré */
+}
+
+.active-link::before {
+  content: '';
+  position: absolute;
+  left: -20px; /* Ajuste la distance du carré par rapport au texte */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #4CAF50; /* Couleur du petit carré */
+  border-radius: 2px;
 }
