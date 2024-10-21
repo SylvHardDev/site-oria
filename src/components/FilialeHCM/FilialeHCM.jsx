@@ -39,9 +39,7 @@ export default function FilialeHCM() {
               d art, et les métiers spécialisés pour le développement et
               l immobilier.
             </p>
-            <button className="mt-6 bg-green-600 text-white px-4 py-2 rounded-md">
-              Lire plus
-            </button>
+            <Button className="mt-6 bg-green-600 text-white px-4 py-2 rounded-sm">Lire plus</Button>
           </div>
 
           {/* Card 2 */}

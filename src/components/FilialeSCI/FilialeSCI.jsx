@@ -7,8 +7,8 @@ import logo_sci from '../../assets/logo/Logo_SCI.png'
 
 export default function FilialeSCI() {
   return (
-    <section className="bg-white">
-      <div className="container mx-auto px-32">
+    <section className="bg-slate-50">
+      <div className="container mx-auto py-16 px-32">
         {/* Section title */}
         <div className="mb-8">
           <h2 className="text-3xl font-bold text-gray-900">
