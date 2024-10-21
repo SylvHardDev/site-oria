@@ -3,6 +3,7 @@ import Hero from "./components/Hero/Hero"
 import FilialeHCM from "./components/FilialeHCM/FilialeHCM"
 import Testimoinials from "./components/Testimoinials/Testimoinials"
 import FilialeSCI from "./components/FilialeSCI/FilialeSCI"
+import Clients from "./components/NosCliensts/Clients"
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <FilialeHCM/>
       <FilialeSCI/>
       <Testimoinials />
+      <Clients/>
     </>
   )
 }
