@@ -20,7 +20,7 @@ export default function Navbar() {
         {/* Navigation as - hidden on small screens */}
 
         <div className="lien hidden md:flex space-x-8 text-gray-700 m-0">
-          <a href="/" className="hover:text-blue-600 active-link">ACCUEIL</a>
+          <a href="/" className="hover:text-blue-600 active-link text-[10px] md:text-[15px] ">ACCUEIL</a>
           <a href="/about" className="hover:text-blue-600">A PROPOS</a>
           <a href="/filiales" className="hover:text-blue-600">NOS FILIALES</a>
           <a href="/projects" className="hover:text-blue-600">NOS PROJETS</a>
