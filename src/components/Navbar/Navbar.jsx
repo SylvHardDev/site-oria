@@ -11,7 +11,7 @@ export default function Navbar() {
         {/* Logo */}
         <div className="w flex-shrink-0">
           <a href="/">
-            <img src={Logo} alt="Logo-oria" className="h-20" />
+            <img src={Logo} alt="Logo-oria" className="w-72" />
           </a>
         </div>
 
