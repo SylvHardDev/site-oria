@@ -3,6 +3,8 @@ import { Button } from '../ui/button';
 import batiments from '../../assets/images/BATIMENTS.png'
 import genie from '../../assets/images/GENIE_CIVIL.png'
 import reseau from '../../assets/images/réseaux.png'
+import logo_htc from '../../assets/logo/logo_HCM.png'
+
 
 export default function Filiale() {
   return (
@@ -91,6 +93,9 @@ export default function Filiale() {
             engagement qualité, garantit la réussite de vos réalisations.
           </p>
           <Button className="bg-blue-900 w-40">COLLABORONS</Button>
+        </div>
+        <div className="logo w-full m-0">
+          <img className='mx-auto w-40 m-0 p-0' src={logo_htc} alt="Logo HCM" />
         </div>
       </div>
     </section>
