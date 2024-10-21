@@ -1,12 +1,11 @@
-import './Filiale.css'
+import './FilialeHCM.css'
 import { Button } from '../ui/button';
 import batiments from '../../assets/images/BATIMENTS.png'
 import genie from '../../assets/images/GENIE_CIVIL.png'
 import reseau from '../../assets/images/réseaux.png'
 import logo_htc from '../../assets/logo/logo_HCM.png'
 
-
-export default function Filiale() {
+export default function FilialeHCM() {
   return (
     <section className="bg-white py-20">
       <div className="container mx-auto px-32">
