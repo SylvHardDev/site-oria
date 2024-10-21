@@ -2,11 +2,12 @@ import './Filiale.css'
 import { Button } from '../ui/button';
 import batiments from '../../assets/images/BATIMENTS.png'
 import genie from '../../assets/images/GENIE_CIVIL.png'
+import reseau from '../../assets/images/réseaux.png'
 
 export default function Filiale() {
   return (
     <section className="bg-white py-20">
-      <div className="container mx-auto px-40">
+      <div className="container mx-auto px-32">
         {/* Section title */}
         <div className="mb-8">
           <h3 className="text-blue-900 text-[12px] font-semibold uppercase flex items-center">
@@ -28,10 +29,10 @@ export default function Filiale() {
         </div>
 
         {/* Cards section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {/* Card 1 */}
-          <div className="bg-blue-800 text-white p-6 rounded-lg shadow-lg">
-            <p className="text-base">
+          <div className="bg-blue-800 text-center text-white p-6 rounded-sm ">
+            <p className="text-[13px]">
               HCM, en tant qu acteur majeur du BTP dans le pays, se spécialise
               dans le bâtiment, le génie civil, les réseaux, les ouvrages
               d art, et les métiers spécialisés pour le développement et
@@ -43,20 +44,20 @@ export default function Filiale() {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-white text-center p-6 border rounded-lg shadow-lg">
+          <div className="bg-white text-center p-6 border rounded-sm ">
             <div className="flex justify-center items-center mb-4">
               {/* Replace the icon here */}
               <img
                 src={batiments}
                 alt="Bâtiments Icon"
-                className="h-28 w-28"
+                className="h-28 w-28 border-solid"
               />
             </div>
             <h3 className="text-xl font-semibold text-gray-800">Bâtiments</h3>
           </div>
 
           {/* Card 3 */}
-          <div className="bg-white text-center p-6 border rounded-lg shadow-lg">
+          <div className="bg-white text-center p-6 border rounded-sm">
             <div className="flex justify-center items-center mb-4">
               {/* Replace the icon here */}
               <img
@@ -69,11 +70,11 @@ export default function Filiale() {
           </div>
 
           {/* Card 4 */}
-          <div className="bg-white text-center p-6 border rounded-lg shadow-lg">
+          <div className="bg-white text-center p-6 border rounded-sm">
             <div className="flex justify-center items-center mb-4">
               {/* Replace the icon here */}
               <img
-                src="/path-to-icon3.png"
+                src={reseau}
                 alt="Réseaux Icon"
                 className="h-28 w-28"
               />
@@ -83,15 +84,13 @@ export default function Filiale() {
         </div>
 
         {/* Footer section */}
-        <div className="mt-12 text-center">
-          <p className="text-gray-500">
+        <div className="p-4 mt-12 rounded-sm flex items-center justify-between border">
+          <p className="mt-2 text-[15px] w-2/3 text-gray-500">
             Confiez vos projets immobiliers à HCM : notre expertise dans le
             bâtiment, le génie civil et les ouvrages d art, associée à notre
             engagement qualité, garantit la réussite de vos réalisations.
           </p>
-          <button className="mt-6 bg-blue-800 text-white px-6 py-3 rounded-md">
-            COLLABORONS
-          </button>
+          <Button className="bg-blue-900 w-40">COLLABORONS</Button>
         </div>
       </div>
     </section>

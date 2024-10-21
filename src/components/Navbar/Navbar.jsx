@@ -20,11 +20,11 @@ export default function Navbar() {
         {/* Navigation as - hidden on small screens */}
 
         <div className="lien hidden md:flex space-x-8 text-gray-700 m-0">
-          <a href="/" className="hover:text-blue-600 active-link text-[10px] md:text-[15px] ">ACCUEIL</a>
-          <a href="/about" className="hover:text-blue-600">A PROPOS</a>
-          <a href="/filiales" className="hover:text-blue-600">NOS FILIALES</a>
-          <a href="/projects" className="hover:text-blue-600">NOS PROJETS</a>
-          <a href="/contact" className="hover:text-blue-600">CONTACTS</a>
+          <a href="/" className="hover:text-blue-600 active-link text-[10px] md:text-[13px] ">ACCUEIL</a>
+          <a href="/about" className="hover:text-blue-600 text-[10px] md:text-[13px]">A PROPOS</a>
+          <a href="/filiales" className="hover:text-blue-600 text-[10px] md:text-[13px]">NOS FILIALES</a>
+          <a href="/projects" className="hover:text-blue-600 text-[10px] md:text-[13px]">NOS PROJETS</a>
+          <a href="/contact" className="hover:text-blue-600 text-[10px] md:text-[13px]">CONTACTS</a>
         </div>
 
         {/* Right Section: Search Icon & Mobile Menu Button */}
@@ -46,12 +46,12 @@ export default function Navbar() {
 
       {/* Mobile Menu - Only visible when menu button is clicked */}
       {isOpen && (
-        <div className="md:hidden absolute z-10 bg-white shadow-md">
-          <a href="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">ACCUEIL</a>
-          <a href="/about" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">A PROPOS</a>
-          <a href="/filiales" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">NOS FILIALES</a>
-          <a href="/projects" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">NOS PROJETS</a>
-          <a href="/contact" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">CONTACTS</a>
+        <div className="md:hidden z-10 bg-white shadow-md">
+          <a href="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-[10px] md:text-[13px]">ACCUEIL</a>
+          <a href="/about" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-[10px] md:text-[13px]">A PROPOS</a>
+          <a href="/filiales" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-[10px] md:text-[13px]">NOS FILIALES</a>
+          <a href="/projects" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-[10px] md:text-[13px]">NOS PROJETS</a>
+          <a href="/contact" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-[10px] md:text-[13px]">CONTACTS</a>
         </div>
       )}
     </nav>
