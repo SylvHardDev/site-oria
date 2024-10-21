@@ -1,13 +1,10 @@
-import { Button } from "./components/ui/button"
-
+import Navbar from "./components/Navbar/Navbar"
 
 function App() {
 
   return (
     <>
-    <div className="py-20">
-      <Button>Hello shadcn</Button>
-    </div>
+      <Navbar/>
     </>
   )
 }
