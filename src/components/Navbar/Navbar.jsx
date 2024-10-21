@@ -8,7 +8,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md">
+    <nav className="bg-white relative shadow-md">
       <div className="container mx-auto px-6 flex items-center justify-evenly h-20">
         {/* Logo */}
         <div className="flex-shrink-0">
@@ -18,8 +18,9 @@ export default function Navbar() {
         </div>
 
         {/* Navigation as - hidden on small screens */}
+
         <div className="lien hidden md:flex space-x-8 text-gray-700 m-0">
-          <a href="/" className="hover:text-blue-600">ACCUEIL</a>
+          <a href="/" className="hover:text-blue-600 active-link">ACCUEIL</a>
           <a href="/about" className="hover:text-blue-600">A PROPOS</a>
           <a href="/filiales" className="hover:text-blue-600">NOS FILIALES</a>
           <a href="/projects" className="hover:text-blue-600">NOS PROJETS</a>
@@ -45,7 +46,7 @@ export default function Navbar() {
 
       {/* Mobile Menu - Only visible when menu button is clicked */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-md">
+        <div className="md:hidden absolute z-10 bg-white shadow-md">
           <a href="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">ACCUEIL</a>
           <a href="/about" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">A PROPOS</a>
           <a href="/filiales" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">NOS FILIALES</a>

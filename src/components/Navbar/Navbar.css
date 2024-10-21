@@ -20,20 +20,20 @@ a {
   margin-right: 0;
 }
 
+/* Style for the active link */
 .active-link {
+  position: relative;
+  color: #1d4ed8; /* Optional: Color for active link */
   font-weight: bold;
-  color: #1a1a1a; /* couleur du texte actif */
-  position: relative; /* Position relative pour le carré */
 }
 
-.active-link::before {
-  content: '';
-  position: absolute;
-  left: -20px; /* Ajuste la distance du carré par rapport au texte */
-  top: 50%;
-  transform: translateY(-50%);
-  width: 10px;
-  height: 10px;
-  background-color: #4CAF50; /* Couleur du petit carré */
-  border-radius: 2px;
+/* Adding the green square before the active link */
+.active-link:before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #289850;
+  margin-right: 8px;
+  vertical-align: middle;
 }
