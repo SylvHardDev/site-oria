@@ -1,7 +1,18 @@
+@font-face {
+    font-family: 'Helvetica-Neue';
+    src: url('../../assets/fonts/HelveticaNeueMedium.otf')
+}
+
+h3 {
+    font-family: 'Helvetica-Neue';
+}
+
 #testimoinials {
     background-image: url(../../assets/images/scene-construction-site-with-equipment.jpg);
     background-position: top;
     background-repeat: no-repeat;
+    position: relative;
+    z-index: -3;
     /* background-size: cover; */
 }
 
@@ -11,7 +22,10 @@ clip-path: polygon(0 6%, 100% 6%, 100% 76%, 100% 88%, 93% 76%, 0% 75%);
 
 #testimoinials .layer {
     width: 100%;
-    background: rgba(16, 55, 114, 0.699);
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: hsla(226, 71%, 40%, 0.361);
     position: absolute;
     pointer-events: none;
 }
