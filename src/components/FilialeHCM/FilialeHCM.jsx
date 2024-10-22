@@ -28,15 +28,6 @@ export default function FilialeHCM() {
             <Button className="inline-block backdrop-grayscale-0 w-40 bg-green-600">Nos projets</Button>
 
           </div>
-          <div className="flex justify-between">
-            <p className="mt-2 text-[15px] w-2/3 text-gray-400">
-              HCM (Habitat & Constructions de Madagascar) s engage à offrir des
-              solutions innovantes et de qualité pour le secteur de la
-              construction.
-            </p>
-            <Button className="inline-block backdrop-grayscale-0 w-40 bg-green-600">Nos projets</Button>
-
-          </div>
         </div>
 
         {/* Cards section */}
