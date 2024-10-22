@@ -3,6 +3,10 @@ import lamp from "../../assets/icons/lamp.png"
 import phone from "../../assets/icons/phone.png"
 import maps from "../../assets/icons/maps.png"
 import chevron from "../../assets/icons/chevron.png"
+import facebook from "../../assets/icons/facebook.png"
+import linkedin from "../../assets/icons/linkedin.png"
+import social from "../../assets/icons/social.png"
+import twitter from "../../assets/icons/twitter.png"
 
 export default function Footer() {
   return (
@@ -131,11 +135,11 @@ export default function Footer() {
           </div>
         </div>
         <div className="right h-full flex items-center px-32 justify-end w-1/2">
-          <div className="social flex w-48">
-            <img className="w-11 h-11" src={phone} alt="icon facebook" />
-            <img className="w-11 h-11" src={phone} alt="icon google" />
-            <img className="w-11 h-11" src={phone} alt="icon tweeter" />
-            <img className="w-11 h-11" src={phone} alt="icon linkedin" />
+          <div className="social items-center flex w-48">
+            <img className="w-11 h-11" src={facebook} alt="icon facebook" />
+            <img className="w-8 h-8" src={social} alt="icon google" />
+            <img className="w-8 h-8" src={twitter} alt="icon tweeter" />
+            <img className="w-9 h-9" src={linkedin} alt="icon linkedin" />
           </div>
         </div>
       </div>
