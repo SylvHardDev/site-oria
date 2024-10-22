@@ -4,6 +4,7 @@ import FilialeHCM from "./components/FilialeHCM/FilialeHCM"
 import Testimoinials from "./components/Testimoinials/Testimoinials"
 import FilialeSCI from "./components/FilialeSCI/FilialeSCI"
 import Clients from "./components/NosCliensts/Clients"
+import Footer from "./components/Footer/Footer"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <FilialeSCI/>
       <Testimoinials />
       <Clients/>
+      <Footer/>
     </>
   )
 }
