@@ -7,10 +7,12 @@ import logo_htc from '../../assets/logo/logo_HCM.png'
 
 export default function FilialeHCM() {
   return (
+    
     <section className="bg-white py-20">
       <div className="container mx-auto px-32">
         {/* Section title */}
         <div className="mb-8">
+
           <h3 className="text-blue-900 text-[12px] font-semibold uppercase flex items-center">
             <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
             ENTITÉS DU GROUPE
