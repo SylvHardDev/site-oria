@@ -1,7 +1,10 @@
 import Navbar from "./components/Navbar/Navbar"
 import Hero from "./components/Hero/Hero"
-// import Filiale from "./components/Filiale/Filiale"
+import FilialeHCM from "./components/FilialeHCM/FilialeHCM"
 import Testimoinials from "./components/Testimoinials/Testimoinials"
+import FilialeSCI from "./components/FilialeSCI/FilialeSCI"
+import Clients from "./components/NosCliensts/Clients"
+import Footer from "./components/Footer/Footer"
 
 function App() {
 
@@ -9,8 +12,11 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      {/* <Filiale/> */}
+      <FilialeHCM/>
+      <FilialeSCI/>
       <Testimoinials />
+      <Clients/>
+      <Footer/>
     </>
   )
 }
