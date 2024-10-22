@@ -7,6 +7,8 @@ import facebook from "../../assets/icons/facebook.png"
 import linkedin from "../../assets/icons/linkedin.png"
 import social from "../../assets/icons/social.png"
 import twitter from "../../assets/icons/twitter.png"
+import actus_1 from "../../assets/images/actu-img-1.png"
+import actus_2 from "../../assets/images/actu-img-2.png"
 
 export default function Footer() {
   return (
@@ -112,13 +114,20 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold">Nos actus</h4>
             <ul className="text-xs space-y-4 pt-2">
-              <li className="border-b border-slate-800 pb-4">
-                <a href="#" className="hover:text-white text-slate-400 pt-2">PIONNIER DE LA CONSTRUCTION À M/CAR</a>
-                <p className="text-xs text-gray-200 pt-2">Le: 25 Septembre 2024</p>
+              <li className="flex border-b border-slate-800 pb-4">
+                <img className="mt-1 w-10 h-10" src={actus_1} alt="image actus 1" />
+                <div className="pl-4">
+                  <a href="#" className="hover:text-white text-slate-400 pt-2">PIONNIER DE LA CONSTRUCTION À M/CAR</a>
+                  <p className="text-xs text-gray-200 pt-2">Le: 25 Septembre 2024</p>
+                </div>
               </li>
-              <li>
-                <a href="#" className="hover:text-white text-slate-400">PIONNIER DE LA CONSTRUCTION À M/CAR</a>
-                <p className="text-xs text-gray-200 pt-2">Le: 25 Septembre 2024</p>
+
+              <li className="flex ">
+                <img className="mt-1 w-10 h-10" src={actus_2} alt="image actus 2" />
+                <div className="pl-4">
+                  <a href="#" className="hover:text-white text-slate-400">PIONNIER DE LA CONSTRUCTION À M/CAR</a>
+                  <p className="text-xs text-gray-200 pt-2">Le: 25 Septembre 2024</p>
+                </div>
               </li>
             </ul>
           </div>
