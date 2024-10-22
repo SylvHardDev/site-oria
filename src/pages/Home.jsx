@@ -1,7 +1,6 @@
 import FilialeHCM from '@/components/FilialeHCM/FilialeHCM'
 import FilialeSCI from '@/components/FilialeSCI/FilialeSCI'
 import Hero from '@/components/Hero/Hero'
-import Testimoinials from '@/components/Testimoinials/Testimoinials'
 
 function Home() {
   return (
@@ -9,7 +8,6 @@ function Home() {
       <Hero />
       <FilialeHCM />
       <FilialeSCI />
-      <Testimoinials />
     </>
   )
 }
