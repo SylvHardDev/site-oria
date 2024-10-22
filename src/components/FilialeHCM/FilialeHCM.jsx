@@ -11,6 +11,7 @@ export default function FilialeHCM() {
       <div className="container mx-auto px-32">
         {/* Section title */}
         <div className="mb-8">
+
           <h3 className="text-blue-900 text-[12px] font-semibold uppercase flex items-center">
             <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
             ENTITÉS DU GROUPE
@@ -18,6 +19,15 @@ export default function FilialeHCM() {
           <h2 className="text-3xl font-bold text-gray-900">
             HCM
           </h2>
+          <div className="flex justify-between">
+            <p className="mt-2 text-[15px] w-2/3 text-gray-400">
+              HCM (Habitat & Constructions de Madagascar) s engage à offrir des
+              solutions innovantes et de qualité pour le secteur de la
+              construction.
+            </p>
+            <Button className="inline-block backdrop-grayscale-0 w-40 bg-green-600">Nos projets</Button>
+
+          </div>
           <div className="flex justify-between">
             <p className="mt-2 text-[15px] w-2/3 text-gray-400">
               HCM (Habitat & Constructions de Madagascar) s engage à offrir des
