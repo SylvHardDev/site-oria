@@ -19,8 +19,12 @@ function Clients() {
               HCM et SCI DM accompagnent une clientèle variée depuis les particuliers suhaite acquérir leur résidence principale  jusqu aux entreprises à la recherche de locaux professionnels.
             </p>
             <Button className="inline-block backdrop-grayscale-0 w-40 bg-green-600">TOUT NOS CLIENTS</Button>
-
           </div>
+
+        </div>
+
+        <div className="logo-clients border">
+
         </div>
       </div>
     </section>
