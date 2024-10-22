@@ -8,7 +8,6 @@ import logo_htc from '../../assets/logo/logo_HCM.png'
 export default function FilialeHCM() {
   return (
     
-    
     <section className="bg-white py-20">
       <div className="container mx-auto px-32">
         {/* Section title */}
