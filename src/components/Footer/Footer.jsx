@@ -5,23 +5,21 @@ import maps from "../../assets/icons/maps.png"
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-950 text-white py-12 pb-0">
-      <div className="container mx-auto px-6 ">
+    <footer className="bg-[#29276c] text-white py-12 pb-0">
+      <div className="container mx-auto px-24 ">
         {/* Top section with three blocks */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 ">
           {/* Block 1: Qui sommes-nous */}
-          <div className="flex items-center">
+          <div className="flex pl-4 p-2 items-center border border-slate-600 relative">
             <div className="mr-4">
               {/* Icon */}
-              <div className="w-10 h-10 bg-green-600 rounded-full flex justify-center items-center">
-                <svg className="text-white w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                </svg>
+              <div className="w-10 h-10 bg-green-600 flex justify-center items-center translate-y-10">
+                <img src={lamp} alt="icon lamp" />
               </div>
             </div>
             <div>
-              <h4 className="text-lg font-semibold">QUI SOMMES-NOUS?</h4>
-              <p className="text-sm">
+              <h4 className="text-sm font-semibold">QUI SOMMES-NOUS?</h4>
+              <p className="text-xs text-slate-400">
                 Nous regroupons des entités spécialisées dans les secteurs de la
                 construction et de la gestion immobilière à Madagascar.
               </p>
@@ -29,35 +27,40 @@ export default function Footer() {
           </div>
 
           {/* Block 2: Adresse */}
-          <div className="flex items-center">
+          <div className="flex pl-4 p-2 items-center border border-slate-600 relative">
             <div className="mr-4">
               {/* Icon */}
-              <div className="w-10 h-10 bg-green-600 rounded-full flex justify-center items-center">
-                <svg className="text-white w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C8.13 2 5 5.13 5 9c0 4.25 7 13 7 13s7-8.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"></path>
-                </svg>
+              <div className="w-10 h-10 p-2 bg-green-600 flex justify-center items-center translate-y-10">
+                <img src={maps} alt="icon lamp" />
               </div>
             </div>
             <div>
-              <h4 className="text-lg font-semibold">ADRESSE</h4>
-              <p className="text-sm">Antananarivo</p>
+              <h4 className="text-sm font-semibold">ADRESSE</h4>
+              <p className="text-xs text-slate-400">
+                Antananarivo
+              </p>
+              <p className="text-xs text-slate-400">
+                ........................................................................
+              </p>
             </div>
           </div>
 
           {/* Block 3: Contacts */}
-          <div className="flex items-center">
+          <div className="flex pl-4 p-2 items-center border border-slate-600 relative">
             <div className="mr-4">
               {/* Icon */}
-              <div className="w-10 h-10 bg-green-600 rounded-full flex justify-center items-center">
-                <svg className="text-white w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path d="M22 16.92V19a2 2 0 0 1-2.18 2A19.74 19.74 0 0 1 3 5.18 2 2 0 0 1 5 3h2.09a2 2 0 0 1 2 1.72 12.18 12.18 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11l-1.27 1.28a16 16 0 0 0 6.61 6.61l1.28-1.27a2 2 0 0 1 2.11-.45 12.18 12.18 0 0 0 2.81.7 2 2 0 0 1 1.72 2z"></path>
-                </svg>
+              <div className="w-10 h-10 bg-green-600 flex justify-center items-center translate-y-10">
+                <img src={phone} alt="icon lamp" />
               </div>
             </div>
             <div>
-              <h4 className="text-lg font-semibold">CONTACTS</h4>
-              <p className="text-sm">020 23 314 14</p>
-              <p className="text-sm">020 23 314 14</p>
+              <h4 className="text-sm font-semibold">CONTACTS</h4>
+              <p className="text-xs text-slate-400">
+                020 23 314 14
+              </p>
+              <p className="text-xs text-slate-400">
+                020 23 314 14
+              </p>
             </div>
           </div>
         </div>
@@ -115,11 +118,11 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-
       </div>
+
       {/* Footer Bottom */}
       <div className="w-full h-20 mt-12 bg-neutral-900 flex flex-col md:flex-row justify-center items-center text-xs text-gray-400">
-        <div className="left px-32 flex justify-center flex-col h-full w-1/2 border">
+        <div className="left px-32 flex justify-center flex-col h-full w-1/2">
           <p>Groupe Oria © Tous droits réservés. Designed by <a href="#" className="text-green-500 underline">Monde Parallèle Agency</a></p>
           <div className="mt-4 md:mt-0">
             <a href="#" className="hover:text-white">Privacy Policy</a>
