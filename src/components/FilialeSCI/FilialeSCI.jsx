@@ -1,8 +1,9 @@
 import '../FilialeHCM/FilialeHCM.css'
 import { Button } from '../ui/button';
 import batiments from '../../assets/images/BATIMENTS.png'
-import genie from '../../assets/images/GENIE_CIVIL.png'
-import reseau from '../../assets/images/réseaux.png'
+import gestion from '../../assets/images/GESTION_IMMOBILIERE.png'
+import entretien from '../../assets/images/ENTRETIEN_DES_BIENS.png'
+import valorisation from '../../assets/images/VALORISATION_DES_BIENS.png'
 import logo_sci from '../../assets/logo/Logo_SCI.png'
 
 export default function FilialeSCI() {
@@ -31,7 +32,7 @@ export default function FilialeSCI() {
             <div className="flex justify-center items-center mb-4">
               {/* Replace the icon here */}
               <img
-                src={reseau}
+                src={gestion}
                 alt="Réseaux Icon"
                 className="h-28 w-28"
               />
@@ -44,7 +45,7 @@ export default function FilialeSCI() {
           <div className="flex justify-center items-center mb-4">
             {/* Replace the icon here */}
             <img
-              src={batiments}
+              src={entretien}
               alt="Bâtiments Icon"
               className="h-28 w-28 border-solid"
             />
@@ -57,7 +58,7 @@ export default function FilialeSCI() {
           <div className="flex justify-center items-center mb-4">
             {/* Replace the icon here */}
             <img
-              src={genie}
+              src={valorisation}
               alt="Génie Civil Icon"
               className="h-28 w-28"
             />
