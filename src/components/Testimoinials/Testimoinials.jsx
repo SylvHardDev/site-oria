@@ -14,7 +14,7 @@ import { Button } from "../ui/button"
 function Testimoinials() {
   return (
     <section id="testimoinials" className="bg-white py-20 relative">
-      <div className="layer z-[-4]"></div>
+      <div className="layer"></div>
 
       <div className="container mx-auto px-32">
         <h2 className="text-green-500 text-xs"><span className="text-white">■</span> CE QUE NOS CLIENTS PENSENT DE NOS SERVICES</h2>
@@ -25,7 +25,7 @@ function Testimoinials() {
         </div>
 
       {/* DEBUT CAROUSEL */}
-      <Carousel>
+      <Carousel className="">
         <CarouselContent>
           <CarouselItem className="md:basis-1/2 lg:basis-1/3 h-96 flex flex-col items-center justify-center">
             <div id="clip-testimoinial" className="bg-white w-80 h-40 flex items-start justify-evenly p-4">

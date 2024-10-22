@@ -12,7 +12,7 @@ h3 {
     background-position: top;
     background-repeat: no-repeat;
     position: relative;
-    z-index: -3;
+    /* z-index: -3; */
     /* background-size: cover; */
 }
 
@@ -25,7 +25,7 @@ clip-path: polygon(0 6%, 100% 6%, 100% 76%, 100% 88%, 93% 76%, 0% 75%);
     height: 100%;
     top: 0;
     left: 0;
-    background: hsla(226, 71%, 40%, 0.361);
+    background: hsla(226, 71%, 40%, 0.308);
     position: absolute;
     pointer-events: none;
 }
