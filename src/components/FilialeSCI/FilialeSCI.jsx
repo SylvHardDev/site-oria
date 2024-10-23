@@ -1,6 +1,6 @@
 import '../FilialeHCM/FilialeHCM.css'
 import { Button } from '../ui/button';
-import batiments from '../../assets/images/BATIMENTS.png'
+// import batiments from '../../assets/images/BATIMENTS.png'
 import gestion from '../../assets/images/GESTION_IMMOBILIERE.png'
 import entretien from '../../assets/images/ENTRETIEN_DES_BIENS.png'
 import valorisation from '../../assets/images/VALORISATION_DES_BIENS.png'
