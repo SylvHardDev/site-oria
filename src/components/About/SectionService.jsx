@@ -28,7 +28,7 @@ function SectionService() {
         </div>
         <div className="grid md:grid-cols-4">
           <div className="bg-blue-900 text-white p-6">
-            <img src="" alt="" />
+            <img src={contruct} alt="construction icon" className="w-14 h-14 my-6 mx-auto" />
             <h3 className="text-xl mb-2">CONSTRUCTION</h3>
             <p className="text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
@@ -36,19 +36,22 @@ function SectionService() {
             </p>
           </div>
           <div className="bg-green-600 text-white p-6">
+            <img src={goute} alt="construction icon" className="w-14 h-14 my-6 mx-auto" />
             <h3 className="text-xl mb-2">CARRELAGE ET PEINTURE</h3>
           </div>
           <div className="bg-green-600 text-white p-6">
+            <img src={house} alt="construction icon" className="w-14 h-14 my-6 mx-auto" />
             <h3 className="text-xl mb-2">RÉNOVATIONS</h3>
           </div>
           <div className="bg-green-600 text-white p-6">
+            <img src={classeur} alt="construction icon" className="w-14 h-14 my-6 mx-auto" />
             <h3 className="text-xl mb-2">CONSULTING</h3>
           </div>
         </div>
 
         <div className="bg-white text-start p-4 mt-12 rounded-sm flex items-center justify-between border">
           <p className="mt-2 text-[15px] w-2/3 text-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ex quae odit eos ab, quas asperiores veritatis porro repudiandae vero at nesciunt. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ex quae odit eos ab, quas asperiores veritatis porro repudiandae vero at nesciunt.
           </p>
           <Button className="bg-blue-900 w-40">COLLABORONS</Button>
         </div>
