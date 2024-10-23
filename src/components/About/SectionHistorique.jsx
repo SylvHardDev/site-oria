@@ -1,4 +1,8 @@
 import photo_Historique from "../../assets/images/scene-construction-site-with-equipment.jpg"
+import money from "../../assets/icons/money.png"
+import star from "../../assets/icons/star.png"
+import user_star from "../../assets/icons/user-star.png"
+import clock from "../../assets/icons/clock.png"
 
 function SectionHistorique() {
   return (
