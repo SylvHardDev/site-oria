@@ -4,10 +4,10 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import crochet from "../../assets/icons/crochet.png";
-import person1 from "../../assets/images/afro-american-woman-smiling-close-up.jpg";
-import person2 from "../../assets/images/business-man-banner-concept-with-copy-space.jpg";
-import person3 from "../../assets/images/happy-successful-businessman-posing-outside.jpg";
-import person4 from "../../assets/images/medium-shot-woman-working-as-lawyer.jpg";
+import person1 from "../../assets/images/afro-american-woman-smiling-close-up.webp";
+import person2 from "../../assets/images/business-man-banner-concept-with-copy-space.webp";
+import person3 from "../../assets/images/happy-successful-businessman-posing-outside.webp";
+import person4 from "../../assets/images/medium-shot-woman-working-as-lawyer.webp";
 import { Button } from "../ui/button";
 import "./Testimoinials.css";
 // import Autoplay from "embla-carousel-autoplay"
