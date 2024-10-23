@@ -36,7 +36,7 @@ function SectionHistorique() {
                   Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae
                 </p>
               </div>
-              
+
               <div className="col-span-2">
                 <p className="text-sm mb-4">
                   Proin in iaculis neque. Pellentesque habitant morbi tristique
@@ -51,13 +51,13 @@ function SectionHistorique() {
                   Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae
                   velit in neque dictum blandit. Proin in iaculis neque.
                   Duis dapibus aliquam mi, eget euismod sem scelerisque ut.
-                  Vivamus at elit quis urna adipiscing iaculis. 
+                  Vivamus at elit quis urna adipiscing iaculis.
                 </p>
               </div>
 
             </div>
           </div>
-          
+
           {/* Fonctionnalités */}
           <div>
             <h2 className="text-green-600 text-xs font-semibold uppercase mb-2">
@@ -69,7 +69,9 @@ function SectionHistorique() {
               {/* Fonctionnalité 1 */}
               <div className="border bg-slate-50 rounded-lg p-6">
                 <div className="flex flex-col mb-4">
-                  <span className="text-green-600 text-3xl">&#x1F551;</span>
+                  <span className="text-green-600 text-3xl">
+                    <img src={clock} className="w-8 h-8" alt="montre" />
+                  </span>
                   <h3 className="pt-2 font-semibold text-md">Toujours disponible</h3>
                 </div>
                 <p className="text-sm text-gray-600">
@@ -80,7 +82,9 @@ function SectionHistorique() {
               {/* Fonctionnalité 2 */}
               <div className="border bg-slate-50 rounded-lg p-6">
                 <div className="flex flex-col mb-4">
-                  <span className="text-green-600 text-3xl">&#x1F4DD;</span>
+                  <span className="text-green-600 text-3xl">
+                    <img src={user_star} className="w-8 h-8" alt="user" />
+                  </span>
                   <h3 className="pt-2 font-semibold text-md">Des agents qualifiés</h3>
                 </div>
                 <p className="text-sm text-gray-600">
@@ -91,7 +95,9 @@ function SectionHistorique() {
               {/* Fonctionnalité 3 */}
               <div className="border bg-slate-50 rounded-lg p-6">
                 <div className="flex flex-col mb-4">
-                  <span className="text-green-600 text-3xl">&#x1F4B3;</span>
+                  <span className="text-green-600 text-3xl">
+                    <img src={money} className="w-9 h-9" alt="argent" />                 
+                  </span>
                   <h3 className="pt-2 font-semibold text-md">Prix abordables</h3>
                 </div>
                 <p className="text-sm text-gray-600">
@@ -102,7 +108,9 @@ function SectionHistorique() {
               {/* Fonctionnalité 4 */}
               <div className="border bg-slate-50 rounded-lg p-6">
                 <div className="flex flex-col mb-4">
-                  <span className="text-green-600 text-3xl">&#x2B50;</span>
+                  <span className="text-green-600 text-3xl">
+                    <img src={star} className="w-9 h-9" alt="etoile" />
+                  </span>
                   <h3 className="pt-2 font-semibold text-md">Meilleures offres</h3>
                 </div>
                 <p className="text-sm text-gray-600">
