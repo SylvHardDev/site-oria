@@ -1,4 +1,8 @@
 import { Button } from "../ui/button";
+import contruct from "../../assets/icons/double-house.png"
+import goute from "../../assets/icons/goute.png"
+import house from "../../assets/icons/house.png"
+import classeur from "../../assets/icons/classeur.png"
 
 function SectionService() {
   return (
@@ -24,6 +28,7 @@ function SectionService() {
         </div>
         <div className="grid md:grid-cols-4">
           <div className="bg-blue-900 text-white p-6">
+            <img src="" alt="" />
             <h3 className="text-xl mb-2">CONSTRUCTION</h3>
             <p className="text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
