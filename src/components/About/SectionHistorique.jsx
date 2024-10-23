@@ -1,4 +1,4 @@
-import photo_Historique from "../../assets/images/scene-construction-site-with-equipment.jpg"
+import photo_Historique from "../../assets/images/illustration-construction-site.jpg"
 import money from "../../assets/icons/money.png"
 import star from "../../assets/icons/star.png"
 import user_star from "../../assets/icons/user-star.png"
