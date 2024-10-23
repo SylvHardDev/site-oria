@@ -10,6 +10,8 @@ import person3 from "../../assets/images/happy-successful-businessman-posing-out
 import person4 from "../../assets/images/medium-shot-woman-working-as-lawyer.jpg";
 import { Button } from "../ui/button";
 import "./Testimoinials.css";
+// import Autoplay from "embla-carousel-autoplay"
+import Autoplay from "embla-carousel-autoplay";
 
 function Testimoinials() {
   return (
@@ -37,7 +39,14 @@ function Testimoinials() {
         </div>
 
         {/* DEBUT CAROUSEL */}
-        <Carousel className="">
+        <Carousel
+          className=""
+          plugins={[
+            Autoplay({
+              delay: 2000,
+            }),
+          ]}
+        >
           <CarouselContent>
             <CarouselItem className="md:basis-1/2 lg:basis-1/3 h-96 flex flex-col items-center justify-center">
               <div
