@@ -13,11 +13,11 @@ import "./Testimoinials.css";
 
 function Testimoinials() {
   return (
-    <section id="testimoinials" className="bg-white py-20 relative">
-      {/* <div className="layer"></div> */}
+    <section id="testimoinials" className="bg-white py-20 ">
+      <div className="layer backdrop-blur-sm"></div>
 
       <div className="container mx-auto px-32">
-        <div>
+        <div className="relative z-50">
           <h2 className="text-green-500 text-xs">
             <span className="text-white">■</span> CE QUE NOS CLIENTS PENSENT DE
             NOS SERVICES
