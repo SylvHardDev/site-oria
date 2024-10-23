@@ -3,7 +3,7 @@ import { Button } from '../ui/button';
 import batiments from '../../assets/images/BATIMENTS.png'
 import genie from '../../assets/images/GENIE_CIVIL.png'
 import reseau from '../../assets/images/réseaux.png'
-import logo_htc from '../../assets/logo/logo_HCM.png'
+import logo_htc from '../../assets/logo/Logo_HCM_result.webp'
 
 export default function FilialeHCM() {
   return (
