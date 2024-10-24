@@ -2,6 +2,7 @@
   background: url(../../assets/images/location-symbol-with-landscape-background_result.webp);
   background-attachment: fixed;
   background-position: bottom;
+  /* background-position: center; */
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
