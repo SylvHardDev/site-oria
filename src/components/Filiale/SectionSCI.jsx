@@ -3,7 +3,7 @@ import construct from "../../assets/icons/double-house-gray.png"
 import goute from "../../assets/icons/goute-gray.png"
 import house from "../../assets/icons/house-gray.png"
 import classeur from "../../assets/icons/classeur-gray.png"
-import setting from "../../assets/icons/classeur-gray.png"
+import setting from "../../assets/icons/setting.png"
 import logo_SCI from "../../assets/logo/Logo_SCI_result.webp"
 
 
