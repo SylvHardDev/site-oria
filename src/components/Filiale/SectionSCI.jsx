@@ -120,7 +120,7 @@ function SectionSCI() {
                 <h3 className="inline-block text-2xl pt-4">Management</h3>
               </div>
               <div className="icon p-2 w-12 h-12 bg-slate-100 rounded-sm">
-                <img src={goute} alt="icone goute" />
+                <img src={setting} alt="icone goute" />
               </div>
             </div>
             <p className="text-sm text-gray-600 mb-6">
