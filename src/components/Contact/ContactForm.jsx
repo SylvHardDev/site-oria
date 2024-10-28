@@ -1,56 +1,19 @@
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-
-import phone from "../../assets/icons/phone.png"
-import maps from "../../assets/icons/maps.png"
-
-import photo from "../../assets/images/illustration-construction-site.webp"
+import phone from "../../assets/icons/phone-vert.png"
+import maps from "../../assets/icons/location-vert.png"
+import mail from "../../assets/icons/MAIL.png"
 
 function ContactForm() {
   return (
-    <div className="flex flex-col items-center justify-center w-full py-10 bg-gray-100">
-      <div className="container mx-auto px-6 lg:flex lg:space-x-10 lg:items-start">
-        
-        {/* Section Image */}
-        <div className="lg:w-1/2">
-          <img
-            src={photo}
-            alt="Site de construction"
-            className="w-full h-auto rounded-lg shadow-lg"
-          />
-        </div>
+    <div className="text-sm items-center justify-center w-full py-10 px-32 ">
+      <div className="container mx-auto p-10 lg:flex lg:space-x-10 lg:items-start">
 
         {/* Section Formulaire et informations de contact */}
-        <div className="lg:w-1/3 mt-10 lg:mt-0 space-y-8">
-          
-          {/* Texte d'introduction */}
-          <div className="space-y-2 text-gray-700">
-            <p>
-              Lorem ipsum dolor sit amet, adipiscing condimentum tristique vel, eleifend sed turpis.
-            </p>
-            <p>
-              Amet, consectetur adipiscing elit Integer.
-            </p>
-          </div>
-
-          {/* Informations de contact */}
-          <div className="space-y-4 text-gray-700">
-            <div className="flex items-center space-x-2">
-              <img className="bg-green-600 p-1 rounded-full w-5 h-5" src={phone} alt="icone telephone" />
-              <span>Phone : 020 23 314 14</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <span>Email : example@domain.com</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <img className="bg-green-600 p-1 rounded-full w-5 h-5" src={maps} alt="icone maps" />
-              <span>Adresse : lorem ipsum dolor sit amet, adipiscing</span>
-            </div>
-          </div>
-
+        <div className="flex gap-10 w-full mx-auto my-auto">
           {/* Formulaire de contact */}
-          <form className="space-y-4">
+          <form className="space-y-4 w-1/2">
             <div className="flex space-x-4">
               <Input
                 label="Nom"
@@ -75,11 +38,50 @@ function ContactForm() {
               required
             />
 
-            <Button type="submit" variant="green" className="w-full mt-4">
+            <Button type="submit" className="w-full mt-4 bg-green-700">
               Envoyer le message
             </Button>
           </form>
 
+          <div className="right w-1/2 flex-col">
+
+            {/* Texte d'introduction */}
+            <div className="space-y-4 text-gray-700">
+              <p>
+                Lorem ipsum dolor sit amet, adipiscing condimentum tristique vel, eleifend sed turpis.
+              </p>
+              <p>
+                Amet, consectetur adipiscing elit Integer.
+              </p>
+            </div>
+
+            {/* Informations de contact */}
+            <div className="space-y-4 mt-4 text-gray-700">
+              <div className="flex justify-between">
+                <div className="flex-col space-x-2">
+                  <p>Phone :</p>
+                  <div className="flex space-x-2">
+                    <img className="w-4 h-4 my-auto" src={phone} alt="icone telephone" />
+                    <span>Phone : 020 23 314 14</span>
+                  </div>
+                </div>
+                <div className="flex-col space-x-2">
+                  <p>Email :</p>
+                  <div className="flex items-center space-x-2">
+                    <img className="w-4 h-4 my-auto" src={mail} alt="icone telephone" />
+                    <span>example@domain.com</span>
+                  </div>
+                </div>
+              </div>
+              <div className="flex-col space-x-2">
+                <p>Adresse :</p>
+                <div className="flex items-center space-x-2">
+                  <img className="w-4 h-4" src={maps} alt="icone maps" />
+                  <span>lorem ipsum dolor sit amet</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
