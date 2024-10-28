@@ -8,7 +8,7 @@ import "./FilialeHCM.css";
 export default function FilialeHCM() {
   return (
     <section className="bg-white py-20">
-      <div className="container mx-auto px-32">
+      <div className="container mx-auto px-4 md:px-32">
         {/* Section title */}
         <div className="mb-8">
           <h3 className="text-blue-900 text-[12px] font-semibold uppercase flex items-center">
@@ -16,10 +16,10 @@ export default function FilialeHCM() {
             ENTITÉS DU GROUPE
           </h3>
           <h2 className="text-3xl font-bold text-gray-900">HCM</h2>
-          <div className="flex justify-between">
-            <p className="mt-2 text-[15px] w-2/3 text-gray-400">
-              HCM (Habitat & Constructions de Madagascar) s engage à offrir des
-              solutions innovantes et de qualité pour le secteur de la
+          <div className="flex flex-col md:flex-row justify-between">
+            <p className="my-2 text-[15px] md:w-2/3 text-gray-400">
+              HCM (Habitat & Constructions de Madagascar) s&apos;engage à offrir
+              des solutions innovantes et de qualité pour le secteur de la
               construction.
             </p>
             <Button className="inline-block backdrop-grayscale-0 w-40 bg-green-600">
@@ -29,7 +29,7 @@ export default function FilialeHCM() {
         </div>
 
         {/* Cards section */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Card 1 */}
           <div className="bg-blue-800 text-center text-white p-6 rounded-sm ">
             <p className="text-[13px]">
@@ -75,8 +75,8 @@ export default function FilialeHCM() {
         </div>
 
         {/* Footer section */}
-        <div className="p-4 mt-12 rounded-sm flex items-center justify-between border">
-          <p className="mt-2 text-[15px] w-2/3 text-gray-500">
+        <div className="p-4 mt-12 rounded-sm flex flex-col md:flex-row items-center justify-between border">
+          <p className="my-2 text-[15px] md:w-2/3 text-gray-500">
             Confiez vos projets immobiliers à HCM : notre expertise dans le
             bâtiment, le génie civil et les ouvrages d art, associée à notre
             engagement qualité, garantit la réussite de vos réalisations.
