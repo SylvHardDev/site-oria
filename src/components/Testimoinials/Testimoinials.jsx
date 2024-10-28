@@ -3,6 +3,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import crochet from "../../assets/icons/crochet.png";
 import person1 from "../../assets/images/afro-american-woman-smiling-close-up.jpg";
 import person2 from "../../assets/images/business-man-banner-concept-with-copy-space.jpg";
@@ -10,8 +11,6 @@ import person3 from "../../assets/images/happy-successful-businessman-posing-out
 import person4 from "../../assets/images/medium-shot-woman-working-as-lawyer.jpg";
 import { Button } from "../ui/button";
 import "./Testimoinials.css";
-// import Autoplay from "embla-carousel-autoplay"
-import Autoplay from "embla-carousel-autoplay";
 
 function Testimoinials() {
   return (
