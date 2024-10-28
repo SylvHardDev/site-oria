@@ -4,7 +4,7 @@ import { Button } from '../ui/button';
 import gestion from '../../assets/images/GESTION_IMMOBILIERE.png'
 import entretien from '../../assets/images/ENTRETIEN_DES_BIENS.png'
 import valorisation from '../../assets/images/VALORISATION_DES_BIENS.png'
-import logo_sci from '../../assets/logo/Logo_SCI.png'
+import logo_sci from '../../assets/logo/Logo_SCI_result.webp'
 
 export default function FilialeSCI() {
   return (
