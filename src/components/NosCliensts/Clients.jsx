@@ -24,23 +24,23 @@ function Clients() {
           </div>
         </div>
 
-        <div className="logo-clients h-20 flex  justify-around items-center">
-          <div className="logo border h-[100%] w-[100%] flex items-center justify-center">
+        <div className="logo-clients h-20 flex flex-wrap md:flex-nowrap  justify-around items-center mb-4">
+          <div className="logo border h-[100%] basis-1/3 md:w-[100%] flex items-center justify-center">
             <h3 className="bordel text-blue-800 text-[25px]">LOGO</h3>
           </div>
-          <div className="logo border h-[100%] w-[100%] flex items-center justify-center">
+          <div className="logo border h-[100%] basis-1/3 md:w-[100%] flex items-center justify-center">
             <h3 className="bordel text-green-500 text-[25px]">LOGO</h3>
           </div>
-          <div className="logo border h-[100%] w-[100%] flex items-center justify-center">
+          <div className="logo border h-[100%] basis-1/3 md:w-[100%] flex items-center justify-center">
             <h3 className="bordel text-blue-800 text-[25px]">LOGO</h3>
           </div>
-          <div className="logo border h-[100%] w-[100%] flex items-center justify-center">
+          <div className="logo border h-[100%] basis-1/3 md:w-[100%] flex items-center justify-center">
             <h3 className="bordel text-green-500 text-[25px]">LOGO</h3>
           </div>
-          <div className="logo border h-[100%] w-[100%] flex items-center justify-center">
+          <div className="logo border h-[100%] basis-1/3 md:w-[100%] flex items-center justify-center">
             <h3 className="bordel text-blue-800 text-[25px]">LOGO</h3>
           </div>
-          <div className="logo border h-[100%] w-[100%] flex items-center justify-center">
+          <div className="logo border h-[100%] basis-1/3 md:w-[100%] flex items-center justify-center">
             <h3 className="bordel text-green-500 text-[25px]">LOGO</h3>
           </div>
         </div>

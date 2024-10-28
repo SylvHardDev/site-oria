@@ -60,7 +60,7 @@ function ContactForm() {
               <div className="flex justify-between">
                 <div className="flex-col space-x-2">
                   <p>Phone :</p>
-                  <div className="flex space-y-2">
+                  <div className="flex space-x-2 space-y-2">
                     <img className="w-4 h-4 my-auto" src={phone} alt="icone telephone" />
                     <span>Phone : 020 23 314 14</span>
                   </div>

@@ -1,15 +1,14 @@
+import classeur from "../../assets/icons/classeur-gray.png";
+import construct from "../../assets/icons/double-house-gray.png";
+import goute from "../../assets/icons/goute-gray.png";
+import house from "../../assets/icons/house-gray.png";
+import logo_HCM from "../../assets/logo/Logo_HCM_result.webp";
 import { Button } from "../ui/button";
-import construct from "../../assets/icons/double-house-gray.png"
-import goute from "../../assets/icons/goute-gray.png"
-import house from "../../assets/icons/house-gray.png"
-import classeur from "../../assets/icons/classeur-gray.png"
-import logo_HCM from "../../assets/logo/Logo_HCM_result.webp"
-
 
 function SectionHCM() {
   return (
     <section className="py-12">
-      <div className="container mx-auto px-32">
+      <div className="container mx-auto px-4 md:px-32">
         {/* Titre principal */}
         <div>
           <h2 className="text-blue-600 text-xs uppercase mb-2">
@@ -19,14 +18,14 @@ function SectionHCM() {
           <h1 className="text-2xl font-bold mb-4">HCM</h1>
           <p className="text-sm text-gray-600 mb-8">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-            illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-            explicabo.
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo.
           </p>
         </div>
 
         {/* Grille de services */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Carrelage */}
           <div className="bg-blue-900 text-white p-6 rounded-lg">
             <div className="title  flex justify-between">
@@ -40,8 +39,8 @@ function SectionHCM() {
             </div>
             <p className="text-sm mb-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-              volutpat.
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat.
             </p>
             <Button className="bg-green-600 text-white py-2 px-4 rounded">
               Lire plus
@@ -50,7 +49,7 @@ function SectionHCM() {
 
           {/* Rénovations */}
           <div className="border p-6 rounded-lg">
-          <div className="title  flex justify-between">
+            <div className="title  flex justify-between">
               <div className="mb-4 flex flex-col">
                 <span className="inline-block w-2 h-2 bg-black mr-2 "></span>
                 <h3 className="inline-block text-2xl pt-4">Rénovation</h3>
@@ -61,8 +60,8 @@ function SectionHCM() {
             </div>
             <p className="text-sm text-gray-600 mb-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-              volutpat.
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat.
             </p>
             <Button className="bg-green-600 text-white py-2 px-4 rounded">
               Lire plus
@@ -71,10 +70,12 @@ function SectionHCM() {
 
           {/* Design et construction */}
           <div className="border p-6 rounded-lg">
-          <div className="title  flex justify-between">
+            <div className="title  flex justify-between">
               <div className="mb-4 flex flex-col">
                 <span className="inline-block w-2 h-2 bg-black mr-2 "></span>
-                <h3 className="inline-block text-2xl pt-4">Design et construction</h3>
+                <h3 className="inline-block text-2xl pt-4">
+                  Design et construction
+                </h3>
               </div>
               <div className="icon p-2 w-12 h-12 bg-slate-100 rounded-sm">
                 <img src={construct} alt="icone goute" />
@@ -82,8 +83,8 @@ function SectionHCM() {
             </div>
             <p className="text-sm text-gray-600 mb-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-              volutpat.
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat.
             </p>
             <Button className="bg-green-600 text-white py-2 px-4 rounded">
               Lire plus
@@ -92,7 +93,7 @@ function SectionHCM() {
 
           {/* Consulting */}
           <div className="border p-6 rounded-lg">
-          <div className="title  flex justify-between">
+            <div className="title  flex justify-between">
               <div className="mb-4 flex flex-col">
                 <span className="inline-block w-2 h-2 bg-black mr-2 "></span>
                 <h3 className="inline-block text-2xl pt-4">Consulting</h3>
@@ -103,8 +104,8 @@ function SectionHCM() {
             </div>
             <p className="text-sm text-gray-600 mb-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-              volutpat.
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat.
             </p>
             <Button className="bg-green-600 text-white py-2 px-4 rounded">
               Lire plus
@@ -113,7 +114,7 @@ function SectionHCM() {
 
           {/* Management */}
           <div className="border p-6 rounded-lg">
-          <div className="title  flex justify-between">
+            <div className="title  flex justify-between">
               <div className="mb-4 flex flex-col">
                 <span className="inline-block w-2 h-2 bg-black mr-2 "></span>
                 <h3 className="inline-block text-2xl pt-4">Management</h3>
@@ -124,8 +125,8 @@ function SectionHCM() {
             </div>
             <p className="text-sm text-gray-600 mb-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-              volutpat.
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat.
             </p>
             <Button className="bg-green-600 text-white py-2 px-4 rounded">
               Lire plus
@@ -134,11 +135,7 @@ function SectionHCM() {
 
           {/* Logo */}
           <div className="flex justify-center items-center">
-            <img
-              src={logo_HCM}
-              alt="HCM logo"
-              className="h-64 w-auto"
-            />
+            <img src={logo_HCM} alt="HCM logo" className="h-64 w-auto" />
           </div>
         </div>
       </div>
@@ -146,4 +143,4 @@ function SectionHCM() {
   );
 }
 
-export default SectionHCM
+export default SectionHCM;
