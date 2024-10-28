@@ -3,6 +3,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import crochet from "../../assets/icons/crochet.png";
 import person1 from "../../assets/images/afro-american-woman-smiling-close-up.webp";
 import person2 from "../../assets/images/business-man-banner-concept-with-copy-space.webp";
@@ -10,15 +11,13 @@ import person3 from "../../assets/images/happy-successful-businessman-posing-out
 import person4 from "../../assets/images/medium-shot-woman-working-as-lawyer.webp";
 import { Button } from "../ui/button";
 import "./Testimoinials.css";
-// import Autoplay from "embla-carousel-autoplay"
-import Autoplay from "embla-carousel-autoplay";
 
 function Testimoinials() {
   return (
     <section id="testimoinials" className="bg-white py-20 ">
       <div className="layer backdrop-blur-sm"></div>
 
-      <div className="container mx-auto px-32">
+      <div className="container mx-auto px-4 md:px-32">
         <div className="relative z-50">
           <h2 className="text-green-500 text-xs">
             <span className="text-white">■</span> CE QUE NOS CLIENTS PENSENT DE
@@ -47,7 +46,7 @@ function Testimoinials() {
             }),
           ]}
         >
-          <CarouselContent>
+          <CarouselContent className="">
             <CarouselItem className="md:basis-1/2 lg:basis-1/3 h-96 flex flex-col items-center justify-center">
               <div
                 id="clip-testimoinial"

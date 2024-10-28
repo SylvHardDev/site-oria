@@ -27,13 +27,13 @@ function Hero() {
               Le Pionnier de la construction et de l &apos;immobilier à
               Madagascar
             </p>
-            <h1 className="text-4xl md:text-7xl tracking-wide">GROUPE ORIA</h1>
+            <h1 className="text-4xl lg:text-7xl tracking-wide">GROUPE ORIA</h1>
             <p className="md:w-2/3">
               Le <span>groupe ORIA</span> regroupe des entités spécialisées dans
               les secteurs de la construction et de la gestion immobilière à
               Madagascar
             </p>
-            <div className="flex h-24 flex-col items-center justify-around md:flex-row md:justify-evenly md:w-[40%] ">
+            <div className="flex h-24 flex-col items-center justify-around md:flex-row md:justify-evenly md:w-[70%] lg:w-[50%] ">
               <Button className="w-40">CONTACTEZ-NOUS</Button>
               <Button variant="outline" className="text-black w-40">
                 NOS PROJETS
