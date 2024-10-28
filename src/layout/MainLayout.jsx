@@ -14,7 +14,7 @@ const isContactPage = location.pathname === "/contact";
           {children}
         </main>
       {!isContactPage && <Testimoinials />}
-      <Clients />
+      {!isContactPage && <Clients  />}
       <Footer/>
     </>
   )
