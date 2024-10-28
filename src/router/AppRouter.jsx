@@ -4,6 +4,7 @@ import Filiale from "@/pages/Filiale"
 import NotFound404 from "@/pages/NotFound404"
 import About from "@/pages/About"
 import MainLayout from "@/layout/MainLayout"
+import Contact from "@/pages/Contact"
 
 function AppRouter() {
   return (
@@ -13,6 +14,7 @@ function AppRouter() {
           <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/filiales" element={<Filiale/>}/>
+          <Route path="/contact" element={<Contact/>}/>
           <Route path="*" element={<NotFound404/>}/>
         </Routes>
       </MainLayout>

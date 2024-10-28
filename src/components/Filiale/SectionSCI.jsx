@@ -116,7 +116,7 @@ function SectionSCI() {
           <div className="border p-6 rounded-lg">
           <div className="title  flex justify-between">
               <div className="mb-4 flex flex-col">
-                <span className="inline-block w-2 h-2 bg-black mr-2 "></span>
+                <span className="inline-block w-2 h-2 bg-black mr-2"></span>
                 <h3 className="inline-block text-2xl pt-4">Management</h3>
               </div>
               <div className="icon p-2 w-12 h-12 bg-slate-100 rounded-sm">
