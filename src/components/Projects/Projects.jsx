@@ -22,7 +22,7 @@ function Projects() {
         {/* SECTION PART */}
         <div className="flex flex-col items-center">
           {/* LIST */}
-          <ul className="md:w-2/3 flex flex-wrap justify-between pb-5">
+          <ul className="md:w-2/3 flex flex-wrap justify-evenly pb-5">
             <li>
               <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
               TOUT

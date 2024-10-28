@@ -24,7 +24,7 @@ function Testimoinials() {
             NOS SERVICES
           </h2>
           <h3 className="text-white text-3xl">TEMOIGNAGES</h3>
-          <div className="h-40 md:h-20 mt-2 text-[15px] text-gray-400 flex flex-col   justify-between md:flex-row  w-full md:items-center md:justify-between">
+          <div className="h-40 md:h-20 mt-4 text-[15px] text-gray-400 flex flex-col   justify-between md:flex-row  w-full md:items-center md:justify-between">
             <p className="w-full md:w-3/4">
               Les témoignages de nos clients témoignent de notre engagement à
               offrir des services immobiliers de qualités supérieure. Leurs
@@ -47,7 +47,7 @@ function Testimoinials() {
           ]}
         >
           <CarouselContent className="">
-            <CarouselItem className="md:basis-1/2 lg:basis-1/3 h-96 flex flex-col items-center justify-center">
+            <CarouselItem className=" lg:basis-1/3 h-96 flex flex-col items-center justify-center">
               <div
                 id="clip-testimoinial"
                 className="bg-white w-80 h-40 flex items-start justify-evenly p-4"
@@ -74,7 +74,7 @@ function Testimoinials() {
               </div>
             </CarouselItem>
 
-            <CarouselItem className="md:basis-1/2 lg:basis-1/3 h-96 flex flex-col items-center justify-center">
+            <CarouselItem className=" lg:basis-1/3 h-96 flex flex-col items-center justify-center">
               <div
                 id="clip-testimoinial"
                 className="bg-white w-80 h-40 flex items-start justify-evenly p-4"
@@ -101,7 +101,7 @@ function Testimoinials() {
               </div>
             </CarouselItem>
 
-            <CarouselItem className="md:basis-1/2 lg:basis-1/3 h-96 flex flex-col items-center justify-center z-30">
+            <CarouselItem className=" lg:basis-1/3 h-96 flex flex-col items-center justify-center z-30">
               <div
                 id="clip-testimoinial"
                 className="bg-white w-80 h-40 flex items-start justify-evenly p-4"
@@ -128,7 +128,7 @@ function Testimoinials() {
               </div>
             </CarouselItem>
 
-            <CarouselItem className="md:basis-1/2 lg:basis-1/3 h-96 flex flex-col items-center justify-center">
+            <CarouselItem className=" lg:basis-1/3 h-96 flex flex-col items-center justify-center">
               <div
                 id="clip-testimoinial"
                 className="bg-white w-80 h-40 flex items-start justify-evenly p-4"

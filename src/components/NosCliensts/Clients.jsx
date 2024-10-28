@@ -13,7 +13,7 @@ function Clients() {
           </h3>
           <h2 className="text-3xl font-bold text-gray-900">NOS CLIENTS</h2>
           <div className="flex flex-col md:flex-row justify-between">
-            <p className="my-2 text-[15px] w-2/3 text-gray-400">
+            <p className="my-2 text-[15px] md:w-2/3 text-gray-400">
               HCM et SCI DM accompagnent une clientèle variée depuis les
               particuliers suhaite acquérir leur résidence principale jusqu aux
               entreprises à la recherche de locaux professionnels.
