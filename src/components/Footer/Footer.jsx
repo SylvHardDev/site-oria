@@ -13,9 +13,9 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <footer className="bg-[#29276c] text-white py-12 pb-0">
-      <div className="container mx-auto px-24 ">
+      <div className="container mx-auto px-6 md:px-24 ">
         {/* Top section with three blocks */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {/* Block 1: Qui sommes-nous */}
           <div className="flex pl-4 p-2 items-center border border-slate-600 relative">
             <div className="mr-4">
