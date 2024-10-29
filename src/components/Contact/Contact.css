@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
 .contact-hero {
   background: url(../../assets/images/illustration-construction-site.webp);
   background-attachment: fixed;
@@ -18,4 +24,10 @@
   left: 0;
   pointer-events: none;
   z-index: -1;
+}
+
+.bg-image {
+  background: url("../../assets/images/illustration-construction-site.webp");
+  background-position: center;
+  background-size: cover;
 }
