@@ -1,20 +1,18 @@
-import { Button } from "../ui/button"
-import { Input } from "../ui/input"
-import { Textarea } from "../ui/textarea"
-import phone from "../../assets/icons/phone-vert.png"
-import mail from "../../assets/icons/MAIL.png"
-import maps from "../../assets/icons/location-vert.png"
+import mail from "../../assets/icons/MAIL.png";
+import maps from "../../assets/icons/location-vert.png";
+import phone from "../../assets/icons/phone-vert.png";
+import { Button } from "../ui/button";
+import { Input } from "../ui/input";
+import { Textarea } from "../ui/textarea";
 
 function ContactForm() {
   return (
-
-    <div className="text-sm items-center justify-center w-full py-10 px-32 ">
+    <div className="text-sm items-center justify-center w-full py-10 px-4 md:px-32 ">
       <div className="container mx-auto pb-10 lg:flex lg:space-x-10 lg:items-start">
-
         {/* Section Formulaire et informations de contact */}
-        <div className="flex gap-10 w-full mx-auto my-auto">
+        <div className="flex flex-col md:flex-row gap-10 w-full mx-auto my-auto">
           {/* Formulaire de contact */}
-          <form className="space-y-4 w-1/2">
+          <form className="space-y-4 lg:w-1/2">
             <div className="flex space-x-4">
               <Input
                 label="Nom"
@@ -48,11 +46,10 @@ function ContactForm() {
             {/* Texte d'introduction */}
             <div className="space-y-4 text-gray-700">
               <p>
-                Lorem ipsum dolor sit amet, adipiscing condimentum tristique vel, eleifend sed turpis.
+                Lorem ipsum dolor sit amet, adipiscing condimentum tristique
+                vel, eleifend sed turpis.
               </p>
-              <p>
-                Amet, consectetur adipiscing elit Integer.
-              </p>
+              <p>Amet, consectetur adipiscing elit Integer.</p>
             </div>
 
             {/* Informations de contact */}
@@ -94,7 +91,7 @@ function ContactForm() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default ContactForm
+export default ContactForm;
