@@ -1,11 +1,34 @@
 import Logo from "../../assets/logo/logo_blue.png"
 import search from "../../assets/icons/search.png"
 import burger from "../../assets/icons/burger-bar.png"
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import "./Navbar.css"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
+  const burgerRef = useRef(null);
+
+  // Fonction pour gérer le clic en dehors du menu
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (menuRef.current && !menuRef.current.contains(event.target) &&
+        burgerRef.current && !burgerRef.current.contains(event.target)) {
+        setIsOpen(false); // Fermer le menu si le clic est en dehors du menu
+      }
+    }
+    // Ajouter l'événement de clic lorsque le menu est ouvert
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+    // Nettoyer l'événement lors du démontage du composant ou lorsque le menu se ferme
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
+
 
   return (
     <nav className="bg-white relative shadow-md">
@@ -36,6 +59,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
+            ref={burgerRef}
             className="burger lg:hidden text-gray-600 hover:text-blue-600 focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -46,7 +70,7 @@ export default function Navbar() {
 
       {/* Mobile Menu - Only visible when menu button is clicked */}
       {isOpen && (
-        <div className="lg:hidden z-10 bg-white shadow-md">
+        <div ref={menuRef} className="lg:hidden z-10 bg-white shadow-md">
           <a href="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-[10px] md:text-[13px]">ACCUEIL</a>
           <a href="/about" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-[10px] md:text-[13px]">A PROPOS</a>
           <a href="/filiales" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-[10px] md:text-[13px]">NOS FILIALES</a>
