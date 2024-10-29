@@ -1,3 +1,4 @@
+import { useLocation, Link } from 'react-router-dom';
 import { useEffect, useRef, useState } from "react";
 import burger from "../../assets/icons/burger-bar.png";
 import search from "../../assets/icons/search.png";
@@ -8,6 +9,11 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
   const burgerRef = useRef(null);
+
+  const location = useLocation();
+
+  // Fonction pour vérifier si un lien est actif
+  const isLinkActive = (path) => location.pathname === path;
 
   // Fonction pour gérer le clic en dehors du menu
   useEffect(() => {
@@ -38,44 +44,44 @@ export default function Navbar() {
       <div className="container  mx-auto px-6 flex items-center justify-around lg:justify-evenly h-20">
         {/* Logo */}
         <div className="flex-shrink-0">
-          <a href="/">
+          <Link to="/">
             <img src={Logo} alt="Logo-oria" className="w-52 md:w-72" />
-          </a>
+          </Link>
         </div>
 
         {/* Navigation as - hidden on small screens */}
 
         <div className="lien hidden lg:flex space-x-8 text-gray-700 m-0">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="hover:text-blue-600 active-link text-[10px] md:text-[13px] "
           >
             ACCUEIL
-          </a>
-          <a
-            href="/about"
+          </Link>
+          <Link
+            to="/about"
             className="hover:text-blue-600 text-[10px] md:text-[13px]"
           >
             A PROPOS
-          </a>
-          <a
-            href="/filiales"
+          </Link>
+          <Link
+            to="/filiales"
             className="hover:text-blue-600 text-[10px] md:text-[13px]"
           >
             NOS FILIALES
-          </a>
-          <a
-            href="/projects"
+          </Link>
+          <Link
+            to="/projects"
             className="hover:text-blue-600 text-[10px] md:text-[13px]"
           >
             NOS PROJETS
-          </a>
-          <a
-            href="/contact"
+          </Link>
+          <Link
+            to="/contact"
             className="hover:text-blue-600 text-[10px] md:text-[13px]"
           >
             CONTACTS
-          </a>
+          </Link>
         </div>
 
         {/* Right Section: Search Icon & Mobile Menu Button */}
@@ -99,36 +105,36 @@ export default function Navbar() {
       {/* Mobile Menu - Only visible when menu button is clicked */}
       {isOpen && (
         <div ref={menuRef} className="lg:hidden p-2 z-10 bg-slate-50  shadow-md">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px]"
           >
             ACCUEIL
-          </a>
-          <a
-            href="/about"
+          </Link>
+          <Link
+            to="/about"
             className="block px-6 py-4 text-gray-700 rounded-sm  hover:bg-gray-100 text-[12px] md:text-[13px]"
           >
             A PROPOS
-          </a>
-          <a
-            href="/filiales"
+          </Link>
+          <Link
+            to="/filiales"
             className="block px-6 py-4 text-gray-700 rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px]"
           >
             NOS FILIALES
-          </a>
-          <a
-            href="/projects"
+          </Link>
+          <Link
+            to="/projects"
             className="block px-6 py-4 text-gray-700 rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px]"
           >
             NOS PROJETS
-          </a>
-          <a
-            href="/contact"
+          </Link>
+          <Link
+            to="/contact"
             className="block px-6 py-4 text-gray-700 rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px]"
           >
             CONTACTS
-          </a>
+          </Link>
         </div>
       )}
     </nav>
