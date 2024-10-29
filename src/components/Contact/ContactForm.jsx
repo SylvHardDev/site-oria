@@ -42,7 +42,7 @@ function ContactForm() {
             </Button>
           </form>
 
-          <div className="right md:w-1/2 flex-col">
+          <div className="right lg:w-1/2 flex-col">
             {/* Texte d'introduction */}
             <div className="space-y-4 text-gray-700">
               <p>
@@ -54,7 +54,7 @@ function ContactForm() {
 
             {/* Informations de contact */}
             <div className="space-y-4 mt-4 text-gray-700">
-              <div className="flex flex-col md:flex-row justify-between">
+              <div className="flex flex-col md:flex-row w-[100%] justify-between">
                 <div className="flex-col space-x-2">
                   <p>Phone :</p>
                   <div className="flex space-x-2">
@@ -63,18 +63,19 @@ function ContactForm() {
                       src={phone}
                       alt="icone telephone"
                     />
-                    <span>Phone : 020 23 314 14</span>
+                    <span>020 23 314 14</span>
                   </div>
                 </div>
+
                 <div className="flex-col space-x-2">
                   <p>Email :</p>
                   <div className="flex items-center space-x-2">
                     <img
-                      className="w-4 h-4 my-auto"
+                      className="w-4 h-4 "
                       src={mail}
                       alt="icone telephone"
                     />
-                    <span>example@domain.com</span>
+                    <p>example@domain.com</p>
                   </div>
                 </div>
               </div>

@@ -1,8 +1,8 @@
-import Logo from "../../assets/logo/logo_blue.png"
-import search from "../../assets/icons/search.png"
-import burger from "../../assets/icons/burger-bar.png"
-import { useState } from 'react';
-import "./Navbar.css"
+import { useState } from "react";
+import burger from "../../assets/icons/burger-bar.png";
+import search from "../../assets/icons/search.png";
+import Logo from "../../assets/logo/logo_blue.png";
+import "./Navbar.css";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,12 +19,37 @@ export default function Navbar() {
 
         {/* Navigation as - hidden on small screens */}
 
-        <div className="lien hidden md:flex space-x-8 text-gray-700 m-0">
-          <a href="/" className="hover:text-blue-600 active-link text-[10px] md:text-[13px] ">ACCUEIL</a>
-          <a href="/about" className="hover:text-blue-600 text-[10px] md:text-[13px]">A PROPOS</a>
-          <a href="/filiales" className="hover:text-blue-600 text-[10px] md:text-[13px]">NOS FILIALES</a>
-          <a href="/projects" className="hover:text-blue-600 text-[10px] md:text-[13px]">NOS PROJETS</a>
-          <a href="/contact" className="hover:text-blue-600 text-[10px] md:text-[13px]">CONTACTS</a>
+        <div className="lien hidden lg:flex space-x-8 text-gray-700 m-0">
+          <a
+            href="/"
+            className="hover:text-blue-600 active-link text-[10px] md:text-[13px] "
+          >
+            ACCUEIL
+          </a>
+          <a
+            href="/about"
+            className="hover:text-blue-600 text-[10px] md:text-[13px]"
+          >
+            A PROPOS
+          </a>
+          <a
+            href="/filiales"
+            className="hover:text-blue-600 text-[10px] md:text-[13px]"
+          >
+            NOS FILIALES
+          </a>
+          <a
+            href="/projects"
+            className="hover:text-blue-600 text-[10px] md:text-[13px]"
+          >
+            NOS PROJETS
+          </a>
+          <a
+            href="/contact"
+            className="hover:text-blue-600 text-[10px] md:text-[13px]"
+          >
+            CONTACTS
+          </a>
         </div>
 
         {/* Right Section: Search Icon & Mobile Menu Button */}
@@ -36,7 +61,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="burger md:hidden text-gray-600 hover:text-blue-600 focus:outline-none"
+            className="burger lg:hidden text-gray-600 hover:text-blue-600 focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
           >
             <img className="icon-burger" src={burger} alt="icone recherche" />
@@ -46,12 +71,37 @@ export default function Navbar() {
 
       {/* Mobile Menu - Only visible when menu button is clicked */}
       {isOpen && (
-        <div className="md:hidden z-10 bg-white shadow-md">
-          <a href="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-[10px] md:text-[13px]">ACCUEIL</a>
-          <a href="/about" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-[10px] md:text-[13px]">A PROPOS</a>
-          <a href="/filiales" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-[10px] md:text-[13px]">NOS FILIALES</a>
-          <a href="/projects" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-[10px] md:text-[13px]">NOS PROJETS</a>
-          <a href="/contact" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-[10px] md:text-[13px]">CONTACTS</a>
+        <div className="lg:hidden z-10 bg-white shadow-md">
+          <a
+            href="/"
+            className="block px-10 py-6 text-gray-700 hover:bg-gray-100 text-[10px] md:text-[13px]"
+          >
+            ACCUEIL
+          </a>
+          <a
+            href="/about"
+            className="block px-10 py-6 text-gray-700 hover:bg-gray-100 text-[10px] md:text-[13px]"
+          >
+            A PROPOS
+          </a>
+          <a
+            href="/filiales"
+            className="block px-10 py-6 text-gray-700 hover:bg-gray-100 text-[10px] md:text-[13px]"
+          >
+            NOS FILIALES
+          </a>
+          <a
+            href="/projects"
+            className="block px-10 py-6 text-gray-700 hover:bg-gray-100 text-[10px] md:text-[13px]"
+          >
+            NOS PROJETS
+          </a>
+          <a
+            href="/contact"
+            className="block px-10 py-6 text-gray-700 hover:bg-gray-100 text-[10px] md:text-[13px]"
+          >
+            CONTACTS
+          </a>
         </div>
       )}
     </nav>
