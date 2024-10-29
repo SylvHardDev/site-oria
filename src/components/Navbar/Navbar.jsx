@@ -22,7 +22,8 @@ export default function Navbar() {
         menuRef.current &&
         !menuRef.current.contains(event.target) &&
         burgerRef.current &&
-        !burgerRef.current.contains(event.target)
+        !burgerRef.current.contains(event.target) &&
+        !menuRef.current.contains(event.target)
       ) {
         setIsOpen(false); // Fermer le menu si le clic est en dehors du menu
       }
@@ -54,31 +55,31 @@ export default function Navbar() {
         <div className="lien hidden lg:flex space-x-8 text-gray-700 m-0">
           <Link
             to="/"
-            className="hover:text-blue-600 active-link text-[10px] md:text-[13px] "
+            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${location.pathname === "/" ? "active-link" : ""}`}
           >
             ACCUEIL
           </Link>
           <Link
             to="/about"
-            className="hover:text-blue-600 text-[10px] md:text-[13px]"
+            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${location.pathname === "/about" ? "active-link" : ""}`}
           >
             A PROPOS
           </Link>
           <Link
             to="/filiales"
-            className="hover:text-blue-600 text-[10px] md:text-[13px]"
+            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${location.pathname === "/filiales" ? "active-link" : ""}`}
           >
             NOS FILIALES
           </Link>
           <Link
             to="/projects"
-            className="hover:text-blue-600 text-[10px] md:text-[13px]"
+            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${location.pathname === "/projects" ? "active-link" : ""}`}
           >
             NOS PROJETS
           </Link>
           <Link
             to="/contact"
-            className="hover:text-blue-600 text-[10px] md:text-[13px]"
+            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${location.pathname === "/contact" ? "active-link" : ""}`}
           >
             CONTACTS
           </Link>
@@ -107,31 +108,31 @@ export default function Navbar() {
         <div ref={menuRef} className="lg:hidden p-2 z-10 bg-slate-50  shadow-md">
           <Link
             to="/"
-            className="block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px]"
+            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/" ? "active-link" : ""}`}
           >
             ACCUEIL
           </Link>
           <Link
             to="/about"
-            className="block px-6 py-4 text-gray-700 rounded-sm  hover:bg-gray-100 text-[12px] md:text-[13px]"
+            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/about" ? "active-link" : ""}`}
           >
             A PROPOS
           </Link>
           <Link
             to="/filiales"
-            className="block px-6 py-4 text-gray-700 rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px]"
+            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/filiales" ? "active-link" : ""}`}
           >
             NOS FILIALES
           </Link>
           <Link
             to="/projects"
-            className="block px-6 py-4 text-gray-700 rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px]"
+            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/projects" ? "active-link" : ""}`}
           >
             NOS PROJETS
           </Link>
           <Link
             to="/contact"
-            className="block px-6 py-4 text-gray-700 rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px]"
+            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/contact" ? "active-link" : ""}`}
           >
             CONTACTS
           </Link>
