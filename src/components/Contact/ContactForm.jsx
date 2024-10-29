@@ -8,7 +8,7 @@ import mail from "../../assets/icons/MAIL.png"
 function ContactForm() {
   return (
     <div className="text-sm items-center justify-center w-full py-10 px-32 ">
-      <div className="container mx-auto p-10 lg:flex lg:space-x-10 lg:items-start">
+      <div className="container mx-auto pb-10 lg:flex lg:space-x-10 lg:items-start">
 
         {/* Section Formulaire et informations de contact */}
         <div className="flex gap-10 w-full mx-auto my-auto">
