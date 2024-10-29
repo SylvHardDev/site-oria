@@ -35,11 +35,11 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white relative shadow-md">
-      <div className="container lg- mx-auto px-6 flex items-center justify-evenly h-20">
+      <div className="container  mx-auto px-6 flex items-center justify-around lg:justify-evenly h-20">
         {/* Logo */}
         <div className="flex-shrink-0">
           <a href="/">
-            <img src={Logo} alt="Logo-oria" className="w-72" />
+            <img src={Logo} alt="Logo-oria" className="w-52 md:w-72" />
           </a>
         </div>
 
