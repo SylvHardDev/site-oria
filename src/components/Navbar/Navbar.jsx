@@ -98,7 +98,7 @@ export default function Navbar() {
 
       {/* Mobile Menu - Only visible when menu button is clicked */}
       {isOpen && (
-        <div ref={menuRef} className="lg:hidden z-10 bg-slate-50  shadow-md">
+        <div ref={menuRef} className="lg:hidden p-2 z-10 bg-slate-50  shadow-md">
           <a
             href="/"
             className="block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px]"
@@ -107,7 +107,7 @@ export default function Navbar() {
           </a>
           <a
             href="/about"
-            className="block px-6 py-4 text-gray-700 rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px]"
+            className="block px-6 py-4 text-gray-700 rounded-sm  hover:bg-gray-100 text-[12px] md:text-[13px]"
           >
             A PROPOS
           </a>
