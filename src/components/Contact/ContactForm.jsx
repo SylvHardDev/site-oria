@@ -1,3 +1,10 @@
+import { Button } from "../ui/button"
+import { Input } from "../ui/input"
+import { Textarea } from "../ui/textarea"
+import phone from "../../assets/icons/phone-vert.png"
+import mail from "../../assets/icons/MAIL.png"
+import maps from "../../assets/icons/location-vert.png"
+
 function ContactForm() {
   return (
 
@@ -37,12 +44,7 @@ function ContactForm() {
             </Button>
           </form>
 
-<<<<<<< HEAD
           <div className="right lg:w-1/2 flex-col">
-=======
-          <div className="right w-1/2 flex-col">
-
->>>>>>> 6618d3f7273a6ee5c056d8f43f98237736b354ae
             {/* Texte d'introduction */}
             <div className="space-y-4 text-gray-700">
               <p>
@@ -55,7 +57,6 @@ function ContactForm() {
 
             {/* Informations de contact */}
             <div className="space-y-4 mt-4 text-gray-700">
-<<<<<<< HEAD
               <div className="flex flex-col md:flex-row w-[100%] justify-between">
                 <div className="flex-col space-x-2">
                   <p>Phone :</p>
@@ -66,20 +67,11 @@ function ContactForm() {
                       alt="icone telephone"
                     />
                     <span>020 23 314 14</span>
-=======
-              <div className="flex justify-between">
-                <div className="flex-col space-x-2">
-                  <p>Phone :</p>
-                  <div className="flex space-x-2 space-y-2">
-                    <img className="w-4 h-4 my-auto" src={phone} alt="icone telephone" />
-                    <span>Phone : 020 23 314 14</span>
->>>>>>> 6618d3f7273a6ee5c056d8f43f98237736b354ae
                   </div>
                 </div>
 
                 <div className="flex-col space-x-2">
                   <p>Email :</p>
-<<<<<<< HEAD
                   <div className="flex items-center space-x-2">
                     <img
                       className="w-4 h-4 "
@@ -87,11 +79,6 @@ function ContactForm() {
                       alt="icone telephone"
                     />
                     <p>example@domain.com</p>
-=======
-                  <div className="flex items-center justify-center space-x-2 space-y-2 bg-slate-400">
-                    <img className="w-4 h-4" src={mail} alt="icone telephone" />
-                    <span className="inline-block bg-slate-300">example@domain.com</span>
->>>>>>> 6618d3f7273a6ee5c056d8f43f98237736b354ae
                   </div>
                 </div>
               </div>
