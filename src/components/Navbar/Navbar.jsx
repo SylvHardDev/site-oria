@@ -19,7 +19,7 @@ export default function Navbar() {
 
         {/* Navigation as - hidden on small screens */}
 
-        <div className="lien hidden md:flex space-x-8 text-gray-700 m-0">
+        <div className="lien hidden lg:flex space-x-6 text-gray-700 m-0">
           <a href="/" className="hover:text-blue-600 active-link text-[10px] md:text-[13px] ">ACCUEIL</a>
           <a href="/about" className="hover:text-blue-600 text-[10px] md:text-[13px]">A PROPOS</a>
           <a href="/filiales" className="hover:text-blue-600 text-[10px] md:text-[13px]">NOS FILIALES</a>
@@ -36,7 +36,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="burger md:hidden text-gray-600 hover:text-blue-600 focus:outline-none"
+            className="burger lg:hidden text-gray-600 hover:text-blue-600 focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
           >
             <img className="icon-burger" src={burger} alt="icone recherche" />
@@ -46,7 +46,7 @@ export default function Navbar() {
 
       {/* Mobile Menu - Only visible when menu button is clicked */}
       {isOpen && (
-        <div className="md:hidden z-10 bg-white shadow-md">
+        <div className="lg:hidden z-10 bg-white shadow-md">
           <a href="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-[10px] md:text-[13px]">ACCUEIL</a>
           <a href="/about" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-[10px] md:text-[13px]">A PROPOS</a>
           <a href="/filiales" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-[10px] md:text-[13px]">NOS FILIALES</a>
