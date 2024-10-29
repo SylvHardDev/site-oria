@@ -3,6 +3,10 @@
 @tailwind utilities;
 @layer base {
   :root {
+    --blue-oria: #289850;
+    --green-oria: #29276c;
+    --gray-oria: #f6f6f6;
+
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
