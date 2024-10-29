@@ -71,13 +71,15 @@ export default function Navbar() {
       {/* Mobile Menu - Only visible when menu button is clicked */}
       {isOpen && (
         <div ref={menuRef} className="lg:hidden z-10 bg-white shadow-md">
-          <a href="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-center text-[12px] md:text-[13px]">ACCUEIL</a>
-          <a href="/about" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-center text-[12px] md:text-[13px]">A PROPOS</a>
-          <a href="/filiales" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-center text-[12px] md:text-[13px]">NOS FILIALES</a>
-          <a href="/projects" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-center text-[12px] md:text-[13px]">NOS PROJETS</a>
-          <a href="/contact" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-center text-[12px] md:text-[13px]">CONTACTS</a>
+          <a href="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-[12px] md:text-[13px]">ACCUEIL</a>
+          <a href="/about" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-[12px] md:text-[13px]">A PROPOS</a>
+          <a href="/filiales" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-[12px] md:text-[13px]">NOS FILIALES</a>
+          <a href="/projects" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-[12px] md:text-[13px]">NOS PROJETS</a>
+          <a href="/contact" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-[12px] md:text-[13px]">CONTACTS</a>
         </div>
       )}
     </nav>
   );
 }
+
+
