@@ -54,7 +54,7 @@ function ContactForm() {
 
             {/* Informations de contact */}
             <div className="space-y-4 mt-4 text-gray-700">
-              <div className="flex flex-col md:flex-row w-[100%] justify-between">
+              <div className="flex flex-col lg:flex-row w-[100%] justify-between">
                 <div className="flex-col space-x-2">
                   <p>Phone :</p>
                   <div className="flex space-x-2">
