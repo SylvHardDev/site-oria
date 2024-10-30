@@ -7,14 +7,15 @@ import { useLocation } from "react-router-dom";
 function MainLayout({children}) {
   const location = useLocation();
 const isContactPage = location.pathname === "/contact";
+const isProjectPage = location.pathname === "/projects";
   return (
     <>
       <Navbar/>
         <main>
           {children}
         </main>
-      {!isContactPage && <Testimoinials />}
-      {!isContactPage && <Clients  />}
+        {!(isContactPage || isProjectPage) && <Testimoinials />}
+        {!(isContactPage || isProjectPage) && <Clients />}
       <Footer/>
     </>
   )
