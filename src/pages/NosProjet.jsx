@@ -1,6 +1,10 @@
+import NosProjetHero from "@/components/NosProjets/NosProjetHero"
+
 function NosProjet() {
   return (
-    <div>NosProjet</div>
+    <>
+      <NosProjetHero/>
+    </>
   )
 }
 
