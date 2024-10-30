@@ -8,9 +8,16 @@ import social from "../../assets/icons/social.png";
 import twitter from "../../assets/icons/twitter.png";
 import actus_1 from "../../assets/images/actu-img-1.png";
 import actus_2 from "../../assets/images/actu-img-2.png";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 export default function Footer() {
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+
   return (
     <footer className="bg-[#29276c] text-white py-12 pb-0">
       <div className="container mx-auto px-6 md:px-24 ">
@@ -86,48 +93,53 @@ export default function Footer() {
             <ul className="pt-3 text-xs space-y-1">
               <li className="border-b border-slate-800 flex items-center">
                 <img className="w-3 h-2" src={chevron} alt="icon chevron" />{" "}
-                <a
-                  href="/"
+                <Link
+                  onClick={scrollToTop}
+                  to="/"
                   className="p-2 block text-slate-400 hover:text-white"
                 >
                   ACCUEIL
-                </a>
+                </Link>
               </li>
               <li className="border-b border-slate-800 flex items-center">
                 <img className="w-3 h-2" src={chevron} alt="icon chevron" />
-                <a
-                  href="/about"
+                <Link
+                  onClick={scrollToTop}
+                  to="/about"
                   className="p-2 block text-slate-400 hover:text-white"
                 >
                   A PROPOS
-                </a>
+                </Link>
               </li>
               <li className="border-b border-slate-800 flex items-center">
                 <img className="w-3 h-2" src={chevron} alt="icon chevron" />
-                <a
-                  href="/filiales"
+                <Link
+                  onClick={scrollToTop}
+                  to="/filiales"
                   className="p-2 block text-slate-400 hover:text-white"
                 >
                   NOS FILIALES
-                </a>
+                </Link>
               </li>
               <li className="border-b border-slate-800 flex items-center">
                 <img className="w-3 h-2" src={chevron} alt="icon chevron" />
-                <a
-                  href="/projects"
+                <Link
+                  onClick={scrollToTop}
+                  to="/projects"
                   className="p-2 block text-slate-400 hover:text-white"
                 >
                   NOS PROJETS
-                </a>
+                </Link>
               </li>
               <li className="flex items-center">
                 <img className="w-3 h-2" src={chevron} alt="icon chevron" />
-                <a
-                  href="/contact"
+                <Link
+                  onClick={scrollToTop}
+                  to="/contact"
                   className="p-2 block text-slate-400 hover:text-white"
                 >
                   CONTACTS
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -140,7 +152,7 @@ export default function Footer() {
               vivement le Groupe ORIA pour tous vos projets immobiliers. Leurs
               réalisations sont synonymes de qualité et de confort.
             </p>
-            <p className="text-xs text-slate-200 pt-2">Il y a 2 heures</p>
+            <p className="text-xs text-slate-200 pt-2">Il y Link 2 heures</p>
 
             <p className="text-xs text-slate-400 mt-4 pt-2">
               <span className="text-green-500">@Pseudo</span> J ai été
@@ -148,7 +160,7 @@ export default function Footer() {
               Leurs projets sont esthétiques et fonctionnels. Un vrai
               savoir-faire local.
             </p>
-            <p className="text-xs text-slate-200 pt-2">Il y a 2 heures</p>
+            <p className="text-xs text-slate-200 pt-2">Il y Link 2 heures</p>
           </div>
 
           {/* Nos actus */}
@@ -162,9 +174,9 @@ export default function Footer() {
                   alt="image actus 1"
                 />
                 <div className="pl-4">
-                  <a href="#" className="hover:text-white text-slate-400 pt-2">
+                  <Link to="#" className="hover:text-white text-slate-400 pt-2">
                     PIONNIER DE LA CONSTRUCTION À M/CAR
-                  </a>
+                  </Link>
                   <p className="text-xs text-gray-200 pt-2">
                     Le: 25 Septembre 2024
                   </p>
@@ -178,9 +190,9 @@ export default function Footer() {
                   alt="image actus 2"
                 />
                 <div className="pl-4">
-                  <a href="#" className="hover:text-white text-slate-400">
+                  <Link to="#" className="hover:text-white text-slate-400">
                     PIONNIER DE LA CONSTRUCTION À M/CAR
-                  </a>
+                  </Link>
                   <p className="text-xs text-gray-200 pt-2">
                     Le: 25 Septembre 2024
                   </p>
@@ -196,18 +208,18 @@ export default function Footer() {
         <div className="left p-4 lg:px-32 w-full md:w-1/2 h-full flex justify-center flex-col ">
           <p>
             Groupe Oria © Tous droits réservés. Designed by{" "}
-            <a href="#" className="text-green-500 underline">
+            <Link to="#" className="text-green-500 underline">
               Monde Parallèle Agency
-            </a>
+            </Link>
           </p>
           <div className="mt-4 md:mt-0">
-            <a href="#" className="hover:text-white">
+            <Link to="#" className="hover:text-white">
               Privacy Policy
-            </a>
-            <a href="#" className="hover:text-white">
+            </Link>
+            <Link to="#" className="hover:text-white">
               {" "}
               - Terms of Use
-            </a>
+            </Link>
           </div>
         </div>
         <div className="right p-4 lg:px-32 w-full md:w-1/2 h-full flex items-center  justify-end ">
