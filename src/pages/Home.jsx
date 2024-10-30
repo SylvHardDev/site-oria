@@ -1,3 +1,4 @@
+import Arrow from "@/components/Arrow/Arrow";
 import FilialeHCM from "@/components/FilialeHCM/FilialeHCM";
 import FilialeSCI from "@/components/FilialeSCI/FilialeSCI";
 import Hero from "@/components/Hero/Hero";
@@ -10,6 +11,7 @@ function Home() {
       <FilialeHCM />
       <FilialeSCI />
       <Projects />
+      <Arrow />
     </>
   );
 }

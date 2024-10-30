@@ -7,6 +7,7 @@ import MainLayout from "@/layout/MainLayout"
 import Contact from "@/pages/Contact"
 import NosProjet from "@/pages/NosProjet"
 
+
 function AppRouter() {
   return (
     <Router>
@@ -21,7 +22,7 @@ function AppRouter() {
         </Routes>
       </MainLayout>
     </Router>
-  )
+  );
 }
 
-export default AppRouter
+export default AppRouter;

@@ -1,5 +1,5 @@
-import { useLocation, Link } from 'react-router-dom';
 import { useEffect, useRef, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import burger from "../../assets/icons/burger-bar.png";
 import search from "../../assets/icons/search.png";
 import Logo from "../../assets/logo/logo_blue.png";
@@ -46,7 +46,12 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex-shrink-0">
           <Link to="/">
-            <img src={Logo} alt="Logo-oria" className="w-52 md:w-72" />
+            <img
+              src={Logo}
+              alt="Logo-oria"
+              className="w-52 md:w-72"
+              id="arrow-top"
+            />
           </Link>
         </div>
 
@@ -55,31 +60,41 @@ export default function Navbar() {
         <div className="lien hidden lg:flex space-x-8 text-gray-700 m-0">
           <Link
             to="/"
-            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${location.pathname === "/" ? "active-link" : ""}`}
+            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${
+              location.pathname === "/" ? "active-link" : ""
+            }`}
           >
             ACCUEIL
           </Link>
           <Link
             to="/about"
-            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${location.pathname === "/about" ? "active-link" : ""}`}
+            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${
+              location.pathname === "/about" ? "active-link" : ""
+            }`}
           >
             A PROPOS
           </Link>
           <Link
             to="/filiales"
-            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${location.pathname === "/filiales" ? "active-link" : ""}`}
+            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${
+              location.pathname === "/filiales" ? "active-link" : ""
+            }`}
           >
             NOS FILIALES
           </Link>
           <Link
             to="/projects"
-            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${location.pathname === "/projects" ? "active-link" : ""}`}
+            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${
+              location.pathname === "/projects" ? "active-link" : ""
+            }`}
           >
             NOS PROJETS
           </Link>
           <Link
             to="/contact"
-            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${location.pathname === "/contact" ? "active-link" : ""}`}
+            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${
+              location.pathname === "/contact" ? "active-link" : ""
+            }`}
           >
             CONTACTS
           </Link>
@@ -105,34 +120,47 @@ export default function Navbar() {
 
       {/* Mobile Menu - Only visible when menu button is clicked */}
       {isOpen && (
-        <div ref={menuRef} className="lg:hidden p-2 z-10 bg-slate-50  shadow-md">
+        <div
+          ref={menuRef}
+          className="lg:hidden p-2 z-10 bg-slate-50  shadow-md"
+        >
           <Link
             to="/"
-            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/" ? "active-link" : ""}`}
+            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${
+              location.pathname === "/" ? "active-link" : ""
+            }`}
           >
             ACCUEIL
           </Link>
           <Link
             to="/about"
-            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/about" ? "active-link" : ""}`}
+            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${
+              location.pathname === "/about" ? "active-link" : ""
+            }`}
           >
             A PROPOS
           </Link>
           <Link
             to="/filiales"
-            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/filiales" ? "active-link" : ""}`}
+            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${
+              location.pathname === "/filiales" ? "active-link" : ""
+            }`}
           >
             NOS FILIALES
           </Link>
           <Link
             to="/projects"
-            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/projects" ? "active-link" : ""}`}
+            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${
+              location.pathname === "/projects" ? "active-link" : ""
+            }`}
           >
             NOS PROJETS
           </Link>
           <Link
             to="/contact"
-            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/contact" ? "active-link" : ""}`}
+            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${
+              location.pathname === "/contact" ? "active-link" : ""
+            }`}
           >
             CONTACTS
           </Link>

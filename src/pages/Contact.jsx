@@ -1,15 +1,17 @@
-import ContactHero from "@/components/Contact/ContactHero"
-import ContactForm from "@/components/Contact/ContactForm"
-import SectionImage from "@/components/Contact/SectionImage"
+import Arrow from "@/components/Arrow/Arrow";
+import ContactForm from "@/components/Contact/ContactForm";
+import ContactHero from "@/components/Contact/ContactHero";
+import SectionImage from "@/components/Contact/SectionImage";
 
 function Contact() {
   return (
     <>
-      <ContactHero/>
-      <SectionImage/>
-      <ContactForm/>
+      <ContactHero />
+      <SectionImage />
+      <ContactForm />
+      <Arrow />
     </>
-  )
+  );
 }
 
-export default Contact
+export default Contact;
