@@ -9,6 +9,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
   const burgerRef = useRef(null);
+  const [scrolled, setScrolled] = useState(false);
 
   const location = useLocation();
 
@@ -37,8 +38,22 @@ export default function Navbar() {
     };
   }, [isOpen]);
 
+  // Fonction pour détecter le défilement et changer le style de la navbar
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) { // Change 100 pour ajuster quand la navbar change de style
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="bg-white relative shadow-md">
+    <nav className={`bg-white relative shadow-md ${scrolled ? "fixed top-0 left-0 w-full h-16 z-50000 transition-all duration-300" : "h-20"}`}>
       <div className="container  mx-auto px-6 flex items-center justify-around lg:justify-evenly h-20">
         {/* Logo */}
         <div className="flex-shrink-0">
