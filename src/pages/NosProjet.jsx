@@ -1,11 +1,15 @@
-import NosProjetHero from "@/components/NosProjets/NosProjetHero"
+import Arrow from "@/components/Arrow/Arrow";
+import NosProjetHero from "@/components/NosProjets/NosProjetHero";
+import ProjectList from "@/components/ProjectList/ProjectList";
 
 function NosProjet() {
   return (
     <>
-      <NosProjetHero/>
+      <NosProjetHero />
+      <ProjectList />
+      <Arrow />
     </>
-  )
+  );
 }
 
-export default NosProjet
+export default NosProjet;
