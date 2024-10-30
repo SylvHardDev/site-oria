@@ -12,9 +12,6 @@ export default function Navbar() {
 
   const location = useLocation();
 
-  // Fonction pour vérifier si un lien est actif
-  const isLinkActive = (path) => location.pathname === path;
-
   // Fonction pour gérer le clic en dehors du menu
   useEffect(() => {
     function handleClickOutside(event) {
