@@ -19,15 +19,15 @@ function SectionHistorique() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
               <div className=" col-span-2 flex flex-col md:flex-row justify-between">
                 {/* Image */}
-                <div className="w-full mb-3 md:w-[40%]">
+                <div className="w-full md:w-[45%]">
                   <img
                     src={photo_Historique}
                     alt="Construction"
-                    className="w-full rounded-lg"
+                    className="w-full h-full rounded-lg"
                   />
                 </div>
                 {/* Texte */}
-                <div className=" md:w-[50%]">
+                <div className="mt-4 md:w-[50%]">
                   <p className="text-sm mb-4">
                     Proin in iaculis neque. Pellentesque habitant morbi
                     tristique senectus et netus malesuada fames ac turpis
