@@ -52,7 +52,12 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
   return (
+
     <nav className={`bg-white relative shadow-md ${scrolled ? "fixed top-0 left-0 w-full h-16 z-50000 transition-all duration-300" : "h-20"}`}>
       <div className="container  mx-auto px-6 flex items-center justify-around lg:justify-evenly h-20">
         {/* Logo */}
@@ -72,41 +77,36 @@ export default function Navbar() {
         <div className="lien hidden lg:flex space-x-8 text-gray-700 m-0">
           <Link
             to="/"
-            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${
-              location.pathname === "/" ? "active-link" : ""
-            }`}
+            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${location.pathname === "/" ? "active-link" : ""
+              }`}
           >
             ACCUEIL
           </Link>
           <Link
             to="/about"
-            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${
-              location.pathname === "/about" ? "active-link" : ""
-            }`}
+            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${location.pathname === "/about" ? "active-link" : ""
+              }`}
           >
             A PROPOS
           </Link>
           <Link
             to="/filiales"
-            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${
-              location.pathname === "/filiales" ? "active-link" : ""
-            }`}
+            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${location.pathname === "/filiales" ? "active-link" : ""
+              }`}
           >
             NOS FILIALES
           </Link>
           <Link
             to="/projects"
-            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${
-              location.pathname === "/projects" ? "active-link" : ""
-            }`}
+            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${location.pathname === "/projects" ? "active-link" : ""
+              }`}
           >
             NOS PROJETS
           </Link>
           <Link
             to="/contact"
-            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${
-              location.pathname === "/contact" ? "active-link" : ""
-            }`}
+            className={`hover:text-blue-600 text-[10px] md:text-[13px] ${location.pathname === "/contact" ? "active-link" : ""
+              }`}
           >
             CONTACTS
           </Link>
@@ -137,42 +137,42 @@ export default function Navbar() {
           className="lg:hidden p-2 z-10 bg-slate-50  shadow-md"
         >
           <Link
+            onClick={handleLinkClick}
             to="/"
-            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${
-              location.pathname === "/" ? "active-link" : ""
-            }`}
+            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/" ? "active-link" : ""
+              }`}
           >
             ACCUEIL
           </Link>
           <Link
+            onClick={handleLinkClick}
             to="/about"
-            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${
-              location.pathname === "/about" ? "active-link" : ""
-            }`}
+            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/about" ? "active-link" : ""
+              }`}
           >
             A PROPOS
           </Link>
           <Link
+            onClick={handleLinkClick}
             to="/filiales"
-            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${
-              location.pathname === "/filiales" ? "active-link" : ""
-            }`}
+            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/filiales" ? "active-link" : ""
+              }`}
           >
             NOS FILIALES
           </Link>
           <Link
+            onClick={handleLinkClick}
             to="/projects"
-            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${
-              location.pathname === "/projects" ? "active-link" : ""
-            }`}
+            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/projects" ? "active-link" : ""
+              }`}
           >
             NOS PROJETS
           </Link>
           <Link
+            onClick={handleLinkClick}
             to="/contact"
-            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${
-              location.pathname === "/contact" ? "active-link" : ""
-            }`}
+            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/contact" ? "active-link" : ""
+              }`}
           >
             CONTACTS
           </Link>
