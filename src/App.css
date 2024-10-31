@@ -59,3 +59,13 @@
     transform: translateY(0);
   }
 }
+
+.reveal {
+  opacity: 0; /* Initial state, hidden */
+  animation: fadeInUp 0.6s ease-out forwards; /* Play animation once in forward */
+  animation-delay: 0.2s; /* Delay for a staggered effect if needed */
+}
+
+.reveal-delay {
+  animation-delay: 0.4s; /* Additional delay for secondary items */
+}
