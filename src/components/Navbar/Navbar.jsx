@@ -52,9 +52,10 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleLinkClick = () => {
+
+  useEffect(() => {
     setIsOpen(false);
-  };
+  }, [location]);
 
   return (
 
@@ -137,7 +138,6 @@ export default function Navbar() {
           className="lg:hidden p-2 z-10 bg-slate-50  shadow-md"
         >
           <Link
-            onClick={handleLinkClick}
             to="/"
             className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/" ? "active-link" : ""
               }`}
@@ -145,7 +145,6 @@ export default function Navbar() {
             ACCUEIL
           </Link>
           <Link
-            onClick={handleLinkClick}
             to="/about"
             className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/about" ? "active-link" : ""
               }`}
@@ -153,7 +152,6 @@ export default function Navbar() {
             A PROPOS
           </Link>
           <Link
-            onClick={handleLinkClick}
             to="/filiales"
             className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/filiales" ? "active-link" : ""
               }`}
@@ -161,7 +159,6 @@ export default function Navbar() {
             NOS FILIALES
           </Link>
           <Link
-            onClick={handleLinkClick}
             to="/projects"
             className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/projects" ? "active-link" : ""
               }`}
@@ -169,7 +166,6 @@ export default function Navbar() {
             NOS PROJETS
           </Link>
           <Link
-            onClick={handleLinkClick}
             to="/contact"
             className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/contact" ? "active-link" : ""
               }`}
