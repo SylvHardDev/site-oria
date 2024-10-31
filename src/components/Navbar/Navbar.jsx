@@ -59,7 +59,7 @@ export default function Navbar() {
 
   return (
 
-    <nav className={`bg-white relative shadow-md ${scrolled ? "fixed top-0 left-0 w-full h-16 z-50000 transition-all duration-300" : "h-20"}`}>
+    <nav className={`relative w-full bg-white shadow-md ${!scrolled ? "fixed top-0 left-0 w-full z-50000 transition-all duration-300" : "h-20"}`}>
       <div className="container  mx-auto px-6 flex items-center justify-around lg:justify-evenly h-20">
         {/* Logo */}
         <div className="flex-shrink-0">
@@ -133,43 +133,43 @@ export default function Navbar() {
 
       {/* Mobile Menu - Only visible when menu button is clicked */}
       {isOpen && (
-        <div
-          ref={menuRef}
-          className={`lg:hidden z-10 bg-slate-50 p-4 shadow-md fixed top-16 left-0 w-full transition-transform duration-300 ease-in-out ${
-            isOpen ? "translate-y-0" : "translate-y-full"
-          }`}
-        >
+     <div
+        ref={menuRef}
+        className={`lg:hidden z-10 bg-slate-50 p-4 shadow-md fixed top-16 left-0 w-full transition-transform duration-300 ease-in-out ${
+          isOpen ? "translate-y-0" : "-translate-y-full"
+        }`}
+      >
           <Link
             to="/"
-            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/" ? "active-link" : ""
+            className={`block px-6 py-4 text-gray-700 rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/" ? "active-link" : ""
               }`}
           >
             ACCUEIL
           </Link>
           <Link
             to="/about"
-            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/about" ? "active-link" : ""
+            className={`block px-6 py-4 text-gray-700 rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/about" ? "active-link" : ""
               }`}
           >
             A PROPOS
           </Link>
           <Link
             to="/filiales"
-            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/filiales" ? "active-link" : ""
+            className={`block px-6 py-4 text-gray-700 rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/filiales" ? "active-link" : ""
               }`}
           >
             NOS FILIALES
           </Link>
           <Link
             to="/projects"
-            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/projects" ? "active-link" : ""
+            className={`block px-6 py-4 text-gray-700 rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/projects" ? "active-link" : ""
               }`}
           >
             NOS PROJETS
           </Link>
           <Link
             to="/contact"
-            className={`block px-6 py-4 text-gray-700  rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/contact" ? "active-link" : ""
+            className={`block px-6 py-4 text-gray-700 rounded-sm hover:bg-gray-100 text-[12px] md:text-[13px] ${location.pathname === "/contact" ? "active-link" : ""
               }`}
           >
             CONTACTS
