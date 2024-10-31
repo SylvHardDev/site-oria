@@ -2,7 +2,7 @@
   font-family: 'Helvetica-Neue';
   src: url('../../assets/fonts/HelveticaNeueMedium.otf')
 }
-
+/* 
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -11,7 +11,7 @@
   scroll-behavior: smooth;
 }
 
-
+ */
 
 .logo {
   height: 6em;
