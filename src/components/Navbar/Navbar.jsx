@@ -59,7 +59,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`w-full bg-white  shadow-md fixed top-0 left-0  z-[999]  ${
+      className={`w-full bg-white  shadow-lg fixed top-0 left-0  z-[999] transition-all ease-in-out ${
         scrolled ? "h-16" : "h-20"
       }`}
     >
@@ -70,7 +70,9 @@ export default function Navbar() {
             <img
               src={Logo}
               alt="Logo-oria"
-              className={` ${scrolled ? "w-48" : "w-52 md:w-72"} `}
+              className={`transition-all ease-in-out ${
+                scrolled ? "w-48" : "w-52 md:w-72"
+              } `}
               id="arrow-top"
             />
           </Link>
