@@ -145,7 +145,9 @@ export default function Navbar() {
       {isOpen && (
         <div
           ref={menuRef}
-          className="lg:hidden p-2 z-10 bg-slate-50  shadow-md"
+          className={`lg:hidden z-10 bg-slate-50 p-4 shadow-md fixed top-16 left-0 w-full transition-transform duration-300 ease-in-out ${
+            isOpen ? "translate-y-0" : "-translate-y-full"
+          }`}
         >
           <Link
             to="/"

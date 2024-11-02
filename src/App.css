@@ -69,3 +69,7 @@
 .reveal-delay {
   animation-delay: 0.4s; /* Additional delay for secondary items */
 }
+
+.transition-transform {
+  transition: transform 0.3s ease-in-out;
+}
