@@ -59,20 +59,18 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`bg-white relative shadow-md ${
-        scrolled
-          ? "fixed top-0 left-0 w-full h-16 z-50000 transition-all duration-300"
-          : "h-20"
+      className={`w-full bg-white  shadow-md fixed top-0 left-0  z-[999]  ${
+        scrolled ? "h-16" : "h-20"
       }`}
     >
-      <div className="container  mx-auto px-6 flex items-center justify-around lg:justify-evenly h-20">
+      <div className="container h-full  mx-auto px-6 flex items-center justify-between lg:justify-evenly">
         {/* Logo */}
-        <div className="flex-shrink-0">
+        <div className="">
           <Link to="/">
             <img
               src={Logo}
               alt="Logo-oria"
-              className="w-52 md:w-72"
+              className={` ${scrolled ? "w-48" : "w-52 md:w-72"} `}
               id="arrow-top"
             />
           </Link>

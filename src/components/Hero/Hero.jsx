@@ -11,7 +11,10 @@ import "./Hero.css";
 
 function Hero() {
   return (
-    <div className="relative h-100% flex justify-center items-center" id="hero">
+    <div
+      className="relative h-100% flex justify-center items-center mt-16"
+      id="hero"
+    >
       <div className="layer"></div>
       <Carousel
         className="w-2/3 md:h-60"
