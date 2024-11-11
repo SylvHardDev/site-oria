@@ -5,6 +5,7 @@ import reseau from "../../assets/images/réseaux.png";
 import logo_htc from "@/assets/logo/logo_HCM.png"
 import { Button } from "../ui/button";
 import "./FilialeHCM.css";
+import { Link } from "react-router-dom";
 
 export default function FilialeHCM() {
   return (
@@ -23,9 +24,11 @@ export default function FilialeHCM() {
               des solutions innovantes et de qualité pour le secteur de la
               construction.
             </p>
-            <Button className="inline-block backdrop-grayscale-0 w-40 bg-green-600">
-              Nos projets
-            </Button>
+            <Link to="/projects">
+              <Button className="inline-block backdrop-grayscale-0 w-40 bg-green-600">
+                Nos projets
+              </Button>
+            </Link>
           </div>
         </div>
 
