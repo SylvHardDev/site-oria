@@ -1,8 +1,6 @@
 import batiments from "../../assets/images/BATIMENTS.png";
 import genie from "../../assets/images/GENIE_CIVIL.png";
 import reseau from "../../assets/images/réseaux.png";
-// import logo_htc from "../../assets/logo/logo_HCM.png";
-// import logo_htc from "@/assets/logo/logo_HCM.png"
 const logo_htc = "/assets/logo/logo_HCM.png"
 import { Button } from "../ui/button";
 import "./FilialeHCM.css";
