@@ -4,8 +4,7 @@ import reseau from "../../assets/images/réseaux.png";
 import { Button } from "../ui/button";
 import "./FilialeHCM.css";
 import { Link } from "react-router-dom";
-// const logo_htc = "/assets/logo/Logo_HCM_result.webp"
-// import logo_hcm from "../../assets/logo/Logo_HCM_result.webp"
+import logo_hcm from "../../assets/logo/Logo_HCM_result.webp";
 
 export default function FilialeHCM() {
   return (
@@ -87,9 +86,9 @@ export default function FilialeHCM() {
           </p>
           <Button className="bg-blue-900 w-40">COLLABORONS</Button>
         </div>
-        {/* <div className="logo w-full m-0">
+        <div className="logo w-full m-0">
           <img className="mx-auto w-40 m-0 p-0" src={logo_hcm} alt="Logo HCM" />
-        </div> */}
+        </div>
       </div>
     </section>
   );
