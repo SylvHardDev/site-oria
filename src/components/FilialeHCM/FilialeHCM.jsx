@@ -84,7 +84,9 @@ export default function FilialeHCM() {
             bâtiment, le génie civil et les ouvrages d art, associée à notre
             engagement qualité, garantit la réussite de vos réalisations.
           </p>
-          <Button className="bg-blue-900 w-40">COLLABORONS</Button>
+          <Link to="/contact">
+            <Button className="bg-blue-900 w-40">COLLABORONS</Button>
+          </Link>
         </div>
         <div className="logo w-full m-0">
           <img className="mx-auto w-40 m-0 p-0" src={logo_hcm} alt="Logo HCM" />
