@@ -5,6 +5,7 @@ import entretien from "../../assets/images/ENTRETIEN_DES_BIENS.png";
 import gestion from "../../assets/images/GESTION_IMMOBILIERE.png";
 import valorisation from "../../assets/images/VALORISATION_DES_BIENS.png";
 import logo_sci from "../../assets/logo/Logo_SCI_result.webp";
+import { Link } from "react-router-dom";
 
 export default function FilialeSCI() {
   return (
@@ -92,7 +93,9 @@ export default function FilialeSCI() {
             gestion de votre patrimoine et bénéficiez d un service entièrement
             personnalisé, adapté à vos besoins spécifique.
           </p>
-          <Button className="bg-blue-900 w-40">COLLABORONS</Button>
+          <Link to="/contact">
+            <Button className="bg-blue-900 w-40">COLLABORONS</Button>
+          </Link>
         </div>
         <div className="logo w-full m-0">
           <img
