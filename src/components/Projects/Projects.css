@@ -1,5 +1,19 @@
 .project-bg {
-  background-image: url(../../assets/images/engineer.webp);
+  background-image: url(../../assets/images/img-projet/image1.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-bg1 {
+  background-image: url(../../assets/images/img-projet/image5.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-bg2 {
+  background-image: url(../../assets/images/img-projet/image3.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
