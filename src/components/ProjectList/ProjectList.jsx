@@ -1,5 +1,5 @@
 import image1 from "../../assets/images/img-projet/image1.webp";
-import image2 from "../../assets/images/img-projet/image2.webp";
+// import image2 from "../../assets/images/img-projet/image2.webp";
 import image3 from "../../assets/images/img-projet/image3.webp";
 import image4 from "../../assets/images/img-projet/image4.webp";
 import image5 from "../../assets/images/img-projet/image5.webp";
@@ -47,13 +47,13 @@ function ProjectList() {
               alt="Image 1"
             />
           </div>
-          <div className="flex justify-center">
+          {/* <div className="flex justify-center">
             <img
               className="w-[80%] md:w-[100%] h-80"
               src={image2}
               alt="Image 2"
             />
-          </div>
+          </div> */}
           <div className="flex justify-center">
             <img
               className="w-[80%] md:w-[100%] h-80"
