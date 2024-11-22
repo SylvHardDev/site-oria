@@ -4,7 +4,7 @@ import lamp from "../../assets/icons/lamp.png";
 import linkedin from "../../assets/icons/linkedin.png";
 import maps from "../../assets/icons/maps.png";
 import phone from "../../assets/icons/phone.png";
-import social from "../../assets/icons/social.png";
+// import social from "../../assets/icons/social.png";
 import twitter from "../../assets/icons/twitter.png";
 import actus_1 from "../../assets/images/actu-img-1.png";
 import actus_2 from "../../assets/images/actu-img-2.png";
@@ -225,7 +225,7 @@ export default function Footer() {
         <div className="right p-4 lg:px-32 w-full md:w-1/2 h-full flex items-center  justify-end ">
           <div className="social items-center flex w-48">
             <img className="w-11 h-11" src={facebook} alt="icon facebook" />
-            <img className="w-8 h-8" src={social} alt="icon google" />
+            {/* <img className="w-8 h-8" src={social} alt="icon google" /> */}
             <img className="w-8 h-8" src={twitter} alt="icon tweeter" />
             <img className="w-9 h-9" src={linkedin} alt="icon linkedin" />
           </div>
