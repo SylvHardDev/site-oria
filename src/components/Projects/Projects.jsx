@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 import "./Projects.css";
 
@@ -22,7 +23,7 @@ function Projects() {
         {/* SECTION PART */}
         <div className="flex flex-col items-center">
           {/* LIST */}
-          <ul className="md:w-2/3 flex flex-wrap justify-evenly pb-5">
+          {/* <ul className="md:w-2/3 flex flex-wrap justify-evenly pb-5">
             <li>
               <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
               TOUT
@@ -32,7 +33,7 @@ function Projects() {
             <li>CARRELAGE</li>
             <li>BÂTIMENTS</li>
             <li>RENOVATION</li>
-          </ul>
+          </ul> */}
 
           {/* Cards section */}
           <div className="w-full grid grid-cols-1  lg:grid-cols-3 gap-6">
@@ -40,13 +41,15 @@ function Projects() {
             <div className="project-bg h-[300px] text-center text-white p-6 rounded-sm flex flex-col items-center justify-center">
               <p className="text-[13px] mb-6">Architecture</p>
               <h4>NOUVEAU BÂTIMENT</h4>
-              <Button className="mt-6 bg-green-600 text-white px-4 py-2 rounded-sm">
-                Le projet
-              </Button>
+              <Link to="/projects">
+                <Button className="shadow-4xl mt-6 bg-green-600 text-white px-4 py-2 rounded-sm">
+                  Voir tout nos projets
+                </Button>
+              </Link>
             </div>
 
-            <div className="project-bg h-[300px] bg-blue-800 text-center text-white p-6 rounded-sm "></div>
-            <div className="project-bg h-[300px] bg-blue-800 text-center text-white p-6 rounded-sm "></div>
+            <div className="project-bg1 h-[300px] bg-blue-800 text-center text-white p-6 rounded-sm "></div>
+            <div className="project-bg2 h-[300px] bg-blue-800 text-center text-white p-6 rounded-sm "></div>
           </div>
         </div>
       </div>
