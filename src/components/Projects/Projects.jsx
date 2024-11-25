@@ -3,6 +3,14 @@ import { Button } from "../ui/button";
 import "./Projects.css";
 
 function Projects() {
+  // Fonction pour faire défiler vers le haut
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Pour un défilement fluide
+    });
+  }; 
+
   return (
     <section className="bg-white py-20 ">
       <div className="container mx-auto px-4 md:px-32">
@@ -41,7 +49,7 @@ function Projects() {
             <div className="project-bg h-[300px] text-center text-white p-6 rounded-sm flex flex-col items-center justify-center">
               <p className="text-[13px] mb-6">Architecture</p>
               <h4>NOUVEAU BÂTIMENT</h4>
-              <Link to="/projects">
+              <Link to="/projects" onClick={scrollToTop}>
                 <Button className="shadow-4xl mt-6 bg-green-600 text-white px-4 py-2 rounded-sm">
                   Voir tout nos projets
                 </Button>
