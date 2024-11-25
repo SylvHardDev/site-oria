@@ -138,9 +138,9 @@ export default function Navbar() {
         {/* Right Section: Search Icon & Mobile Menu Button */}
         <div className="flex items-center space-x-4">
           {/* Search Icon */}
-          <button className="recherche text-gray-600 hover:text-blue-600">
+          {/* <button className="recherche text-gray-600 hover:text-blue-600">
             <img className="icon-loop" src={search} alt="icone recherche" />
-          </button>
+          </button> */}
 
           {/* Mobile Menu Button */}
           <button
