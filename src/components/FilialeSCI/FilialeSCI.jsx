@@ -8,6 +8,14 @@ import logo_sci from "../../assets/logo/Logo_SCI_result.webp";
 import { Link } from "react-router-dom";
 
 export default function FilialeSCI() {
+  // Fonction pour faire défiler vers le haut
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Pour un défilement fluide
+    });
+  };
+
   return (
     <section className="bg-slate-50 py-20">
       <div className="container mx-auto px-4 md:px-32">
@@ -22,9 +30,11 @@ export default function FilialeSCI() {
               valorisation de votre bien, nous mettons notre expertise au
               sèrvice de vos besoins spécifiques.
             </p>
-            <Button className="inline-block backdrop-grayscale-0 w-40 bg-green-600">
-              Nos projets
-            </Button>
+            <Link to="/projects" onClick={scrollToTop}>
+              <Button className="inline-block backdrop-grayscale-0 w-40 bg-green-600">
+                Nos projets
+              </Button>
+            </Link>
           </div>
         </div>
 
@@ -93,7 +103,7 @@ export default function FilialeSCI() {
             gestion de votre patrimoine et bénéficiez d un service entièrement
             personnalisé, adapté à vos besoins spécifique.
           </p>
-          <Link to="/contact">
+          <Link to="/contact" onClick={scrollToTop}>
             <Button className="bg-blue-900 w-40">COLLABORONS</Button>
           </Link>
         </div>
