@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import image1 from "../../assets/images/img-projet/image1.webp";
 // import image2 from "../../assets/images/img-projet/image2.webp";
 import image3 from "../../assets/images/img-projet/image3.webp";
@@ -22,178 +23,63 @@ import image21 from "../../assets/images/img-projet/image21.webp";
 import image22 from "../../assets/images/img-projet/image22.webp";
 
 function ProjectList() {
+  const [selectedCategory, setSelectedCategory] = useState('TOUT');
+
+  const images = [
+    { src: image1, category: 'DESGINE INTERIEUR' },
+    { src: image3, category: 'ARCHITECTURE' },
+    { src: image4, category: 'CARRELAGE' },
+    { src: image5, category: 'BÂTIMENTS' },
+    { src: image6, category: 'RENOVATION' },
+    { src: image7, category: 'DESGINE INTERIEUR' },
+    { src: image8, category: 'ARCHITECTURE' },
+    { src: image9, category: 'CARRELAGE' },
+    { src: image10, category: 'BÂTIMENTS' },
+    { src: image11, category: 'RENOVATION' },
+    { src: image12, category: 'DESGINE INTERIEUR' },
+    { src: image13, category: 'ARCHITECTURE' },
+    { src: image14, category: 'CARRELAGE' },
+    { src: image15, category: 'BÂTIMENTS' },
+    { src: image16, category: 'RENOVATION' },
+    { src: image17, category: 'DESGINE INTERIEUR' },
+    { src: image18, category: 'ARCHITECTURE' },
+    { src: image19, category: 'CARRELAGE' },
+    { src: image20, category: 'BÂTIMENTS' },
+    { src: image21, category: 'RENOVATION' },
+    { src: image22, category: 'DESGINE INTERIEUR' },
+  ];
+
+  const filteredImages = selectedCategory === 'TOUT'
+    ? images
+    : images.filter(image => image.category === selectedCategory);
+
   return (
     <section className="bg-white py-20 ">
       <div className="mx-auto flex flex-col items-center px-4 md:px-32">
         {/* Section filtre */}
         <ul className="md:w-2/3 flex flex-wrap justify-evenly pb-5">
-          <li>
+          <li onClick={() => setSelectedCategory('TOUT')}>
             <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
             TOUT
           </li>
-          <li>DESGINE INTERIEUR</li>
-          <li>ARCHITECTURE</li>
-          <li>CARRELAGE</li>
-          <li>BÂTIMENTS</li>
-          <li>RENOVATION</li>
+          <li onClick={() => setSelectedCategory('DESGINE INTERIEUR')}>DESGINE INTERIEUR</li>
+          <li onClick={() => setSelectedCategory('ARCHITECTURE')}>ARCHITECTURE</li>
+          <li onClick={() => setSelectedCategory('CARRELAGE')}>CARRELAGE</li>
+          <li onClick={() => setSelectedCategory('BÂTIMENTS')}>BÂTIMENTS</li>
+          <li onClick={() => setSelectedCategory('RENOVATION')}>RENOVATION</li>
         </ul>
 
         {/* Section Projects Cards */}
-        <div className="w-full grid  md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="flex justify-center">
-            <img
-              className="w-[80%] md:w-[100%] h-80"
-              src={image1}
-              alt="Image 1"
-            />
-          </div>
-          {/* <div className="flex justify-center">
-            <img
-              className="w-[80%] md:w-[100%] h-80"
-              src={image2}
-              alt="Image 2"
-            />
-          </div> */}
-          <div className="flex justify-center">
-            <img
-              className="w-[80%] md:w-[100%] h-80"
-              src={image3}
-              alt="Image 3"
-            />
-          </div>
-          <div className="flex justify-center">
-            <img
-              className="w-[80%] md:w-[100%] h-80"
-              src={image4}
-              alt="Image 4"
-            />
-          </div>
-          <div className="flex justify-center">
-            <img
-              className="w-[80%] md:w-[100%] h-80"
-              src={image5}
-              alt="Image 5"
-            />
-          </div>
-          <div className="flex justify-center">
-            <img
-              className="w-[80%] md:w-[100%] h-80"
-              src={image6}
-              alt="Image 6"
-            />
-          </div>
-          <div className="flex justify-center">
-            <img
-              className="w-[80%] md:w-[100%] h-80"
-              src={image7}
-              alt="Image 7"
-            />
-          </div>
-          <div className="flex justify-center">
-            <img
-              className="w-[80%] md:w-[100%] h-80"
-              src={image8}
-              alt="Image 8"
-            />
-          </div>
-          <div className="flex justify-center">
-            <img
-              className="w-[80%] md:w-[100%] h-80"
-              src={image9}
-              alt="Image 9"
-            />
-          </div>
-          <div className="flex justify-center">
-            <img
-              className="w-[80%] md:w-[100%] h-80"
-              src={image10}
-              alt="Image 10"
-            />
-          </div>
-          <div className="flex justify-center">
-            <img
-              className="w-[80%] md:w-[100%] h-80"
-              src={image11}
-              alt="Image 11"
-            />
-          </div>
-          <div className="flex justify-center">
-            <img
-              className="w-[80%] md:w-[100%] h-80"
-              src={image12}
-              alt="Image 12"
-            />
-          </div>
-          <div className="flex justify-center">
-            <img
-              className="w-[80%] md:w-[100%] h-80"
-              src={image13}
-              alt="Image 13"
-            />
-          </div>
-          <div className="flex justify-center">
-            <img
-              className="w-[80%] md:w-[100%] h-80"
-              src={image14}
-              alt="Image 14"
-            />
-          </div>
-          <div className="flex justify-center">
-            <img
-              className="w-[80%] md:w-[100%] h-80"
-              src={image15}
-              alt="Image 15"
-            />
-          </div>
-          <div className="flex justify-center">
-            <img
-              className="w-[80%] md:w-[100%] h-80"
-              src={image16}
-              alt="Image 16"
-            />
-          </div>
-          <div className="flex justify-center">
-            <img
-              className="w-[80%] md:w-[100%] h-80"
-              src={image17}
-              alt="Image 17"
-            />
-          </div>
-          <div className="flex justify-center">
-            <img
-              className="w-[80%] md:w-[100%] h-80"
-              src={image18}
-              alt="Image 18"
-            />
-          </div>
-          <div className="flex justify-center">
-            <img
-              className="w-[80%] md:w-[100%] h-80"
-              src={image19}
-              alt="Image 19"
-            />
-          </div>
-          <div className="flex justify-center">
-            <img
-              className="w-[80%] md:w-[100%] h-80"
-              src={image20}
-              alt="Image 20"
-            />
-          </div>
-          <div className="flex justify-center">
-            <img
-              className="w-[80%] md:w-[100%] h-80"
-              src={image21}
-              alt="Image 21"
-            />
-          </div>
-          <div className="flex justify-center">
-            <img
-              className="w-[80%] md:w-[100%] h-80"
-              src={image22}
-              alt="Image 22"
-            />
-          </div>
+        <div className="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {filteredImages.map((image, index) => (
+            <div key={index} className="flex justify-center">
+              <img
+                className="w-[80%] md:w-[100%] h-80"
+                src={image.src}
+                alt={`Image ${index + 1}`}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>
