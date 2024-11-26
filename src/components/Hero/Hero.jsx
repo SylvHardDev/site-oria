@@ -26,7 +26,7 @@ function Hero() {
       // ]}
       >
         <CarouselContent className="text-white md:h-60 text-center">
-          <CarouselItem className="flex flex-col items-center justify-around">
+          <CarouselItem className="flex flex-col items-center justify-around cursor-pointer">
             <p>
               Le Pionnier de la construction et de l &apos;immobilier à
               Madagascar
@@ -48,7 +48,7 @@ function Hero() {
               </Link>
             </div>
           </CarouselItem>
-          <CarouselItem className="flex flex-col items-center justify-around">
+          <CarouselItem className="flex flex-col items-center justify-around cursor-pointer">
             <p>
               Le Pionnier de la construction et de l &apos;immobilier à
               Madagascar
@@ -70,7 +70,7 @@ function Hero() {
               </Link>
             </div>
           </CarouselItem>
-          <CarouselItem className="flex flex-col items-center justify-around">
+          <CarouselItem className="flex flex-col items-center justify-around cursor-pointer">
             <p>
               Le Pionnier de la construction et de l &apos;immobilier à
               Madagascar
