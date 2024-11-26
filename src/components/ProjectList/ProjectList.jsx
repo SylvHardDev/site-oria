@@ -58,8 +58,8 @@ function ProjectList() {
     <section className="bg-white py-20 ">
       <div className="mx-auto flex flex-col items-center px-4 md:px-32">
         {/* Section filtre */}
-        <ul className="md:w-2/3 flex flex-wrap justify-evenly pb-5">
-          <li onClick={() => setSelectedCategory('TOUT')} className="cursor-pointer">
+        <ul className="md:w-2/3 flex flex-wrap justify-evenly pb-5 filters-container">
+          <li onClick={() => setSelectedCategory('TOUT')} className="cursor-pointer filter-item">
             {selectedCategory === 'TOUT' && (
               <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
             )}
@@ -67,7 +67,7 @@ function ProjectList() {
           </li>
           <li
             onClick={() => setSelectedCategory('DESGINE INTERIEUR')}
-            className={`cursor-pointer transition-transform duration-300 ${
+            className={`cursor-pointer transition-transform duration-300 filter-item ${
               selectedCategory === 'DESGINE INTERIEUR' ? 'transform scale-105' : ''
             }`}
           >
@@ -78,7 +78,7 @@ function ProjectList() {
           </li>
           <li
             onClick={() => setSelectedCategory('ARCHITECTURE')}
-            className={`cursor-pointer transition-transform duration-300 ${
+            className={`cursor-pointer transition-transform duration-300 filter-item ${
               selectedCategory === 'ARCHITECTURE' ? 'transform scale-105' : ''
             }`}
           >
@@ -89,7 +89,7 @@ function ProjectList() {
           </li>
           <li
             onClick={() => setSelectedCategory('CARRELAGE')}
-            className={`cursor-pointer transition-transform duration-300 ${
+            className={`cursor-pointer transition-transform duration-300 filter-item ${
               selectedCategory === 'CARRELAGE' ? 'transform scale-105' : ''
             }`}
           >
@@ -100,7 +100,7 @@ function ProjectList() {
           </li>
           <li
             onClick={() => setSelectedCategory('BÂTIMENTS')}
-            className={`cursor-pointer transition-transform duration-300 ${
+            className={`cursor-pointer transition-transform duration-300 filter-item ${
               selectedCategory === 'BÂTIMENTS' ? 'transform scale-105' : ''
             }`}
           >
@@ -111,7 +111,7 @@ function ProjectList() {
           </li>
           <li
             onClick={() => setSelectedCategory('RENOVATION')}
-            className={`cursor-pointer transition-transform duration-300 ${
+            className={`cursor-pointer transition-transform duration-300 filter-item ${
               selectedCategory === 'RENOVATION' ? 'transform scale-105' : ''
             }`}
           >
@@ -127,7 +127,7 @@ function ProjectList() {
           {filteredImages.map((image, index) => (
             <div key={index} className="flex justify-center">
               <img
-                className="w-[80%] md:w-[100%] h-80"
+                className="w-[80%] md:w-[100%] h-80 object-cover max-w-full"
                 src={image.src}
                 alt={`Image ${index + 1}`}
               />
