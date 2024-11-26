@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import image1 from "../../assets/images/img-projet/image1.webp";
 // import image2 from "../../assets/images/img-projet/image2.webp";
 import image3 from "../../assets/images/img-projet/image3.webp";
@@ -24,7 +24,8 @@ import image22 from "../../assets/images/img-projet/image22.webp";
 import "./ProjectList.css";
 
 function ProjectList() {
-  const [selectedCategory, setSelectedCategory] = useState('TOUT');
+  const [filter, setFilter] = useState('TOUT');
+  const [animationKey, setAnimationKey] = useState(0);
 
   const images = [
     { src: image1, category: 'DESGINE INTERIEUR' },
@@ -50,72 +51,77 @@ function ProjectList() {
     { src: image22, category: 'DESGINE INTERIEUR' },
   ];
 
-  const filteredImages = selectedCategory === 'TOUT'
+  const filteredImages = filter === 'TOUT'
     ? images
-    : images.filter(image => image.category === selectedCategory);
+    : images.filter(image => image.category === filter);
+
+  const handleFilterChange = (newFilter) => {
+    setFilter(newFilter);
+    setAnimationKey((prevKey) => prevKey + 1);
+  };
 
   return (
     <section className="bg-white py-20 ">
       <div className="mx-auto flex flex-col items-center px-4 md:px-32">
         {/* Section filtre */}
         <ul className="md:w-2/3 flex flex-wrap justify-evenly pb-5 filters-container">
-          <li onClick={() => setSelectedCategory('TOUT')} className="cursor-pointer filter-item">
-            {selectedCategory === 'TOUT' && (
+          <li onClick={() => handleFilterChange('TOUT')} className="cursor-pointer filter-item">
+            {filter === 'TOUT' && (
               <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
             )}
             TOUT
           </li>
           <li
-            onClick={() => setSelectedCategory('DESGINE INTERIEUR')}
+            onClick={() => handleFilterChange('DESGINE INTERIEUR')}
             className={`cursor-pointer transition-transform duration-300 filter-item ${
-              selectedCategory === 'DESGINE INTERIEUR' ? 'transform scale-105' : ''
+              filter === 'DESGINE INTERIEUR' ? 'transform scale-105' : ''
             }`}
           >
-            {selectedCategory === 'DESGINE INTERIEUR' && (
+            {filter === 'DESGINE INTERIEUR' && (
               <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
             )}
             DESGINE INTERIEUR
           </li>
           <li
-            onClick={() => setSelectedCategory('ARCHITECTURE')}
+            onClick={() => handleFilterChange('ARCHITECTURE')}
             className={`cursor-pointer transition-transform duration-300 filter-item ${
-              selectedCategory === 'ARCHITECTURE' ? 'transform scale-105' : ''
+              filter === 'ARCHITECTURE' ? 'transform scale-105' : ''
             }`}
           >
-            {selectedCategory === 'ARCHITECTURE' && (
+            {filter === 'ARCHITECTURE' && (
               <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
             )}
             ARCHITECTURE
           </li>
           <li
-            onClick={() => setSelectedCategory('CARRELAGE')}
+            onClick={() => handleFilterChange('CARRELAGE')}
             className={`cursor-pointer transition-transform duration-300 filter-item ${
-              selectedCategory === 'CARRELAGE' ? 'transform scale-105' : ''
+              filter === 'CARRELAGE' ? 'transform scale-105' : ''
             }`}
           >
-            {selectedCategory === 'CARRELAGE' && (
+            {filter === 'CARRELAGE' && (
               <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
             )}
             CARRELAGE
           </li>
           <li
-            onClick={() => setSelectedCategory('BÂTIMENTS')}
+            onClick={() => handleFilterChange('BÂTIMENTS')}
             className={`cursor-pointer transition-transform duration-300 filter-item ${
-              selectedCategory === 'BÂTIMENTS' ? 'transform scale-105' : ''
+              filter === 'BÂTIMENTS' ? 'transform scale-105' : ''
             }`}
           >
-            {selectedCategory === 'BÂTIMENTS' && (
+            {filter === 'BÂTIMENTS' && (
               <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
             )}
             BÂTIMENTS
           </li>
           <li
-            onClick={() => setSelectedCategory('RENOVATION')}
+            onClick={() => handleFilterChange('RENOVATION')}
             className={`cursor-pointer transition-transform duration-300 filter-item ${
-              selectedCategory === 'RENOVATION' ? 'transform scale-105' : ''
+              filter === 'RENOVATION' ? 'transform scale-105' : ''
             }`}
           >
-            {selectedCategory === 'RENOVATION' && (
+            {filter === 'RENOVATION' && (
               <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
             )}
             RENOVATION
@@ -125,7 +131,11 @@ function ProjectList() {
         {/* Section Projects Cards */}
         <div className="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {filteredImages.map((image, index) => (
-            <div key={index} className="flex justify-center">
+            <div
+              key={`${animationKey}-${index}`}
+              className="flex justify-center fade-in"
+              style={{ animationDelay: `${index * 0.2}s` }}
+            >
               <img
                 className="w-[80%] md:w-[100%] h-80 object-cover max-w-full"
                 src={image.src}
