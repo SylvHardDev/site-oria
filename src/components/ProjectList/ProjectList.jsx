@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import image1 from "../../assets/images/img-projet/image1.webp";
 // import image2 from "../../assets/images/img-projet/image2.webp";
 import image3 from "../../assets/images/img-projet/image3.webp";
@@ -58,15 +58,42 @@ function ProjectList() {
       <div className="mx-auto flex flex-col items-center px-4 md:px-32">
         {/* Section filtre */}
         <ul className="md:w-2/3 flex flex-wrap justify-evenly pb-5">
-          <li onClick={() => setSelectedCategory('TOUT')}>
-            <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
+          <li onClick={() => setSelectedCategory('TOUT')} className="cursor-pointer">
+            {selectedCategory === 'TOUT' && (
+              <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
+            )}
             TOUT
           </li>
-          <li onClick={() => setSelectedCategory('DESGINE INTERIEUR')}>DESGINE INTERIEUR</li>
-          <li onClick={() => setSelectedCategory('ARCHITECTURE')}>ARCHITECTURE</li>
-          <li onClick={() => setSelectedCategory('CARRELAGE')}>CARRELAGE</li>
-          <li onClick={() => setSelectedCategory('BÂTIMENTS')}>BÂTIMENTS</li>
-          <li onClick={() => setSelectedCategory('RENOVATION')}>RENOVATION</li>
+          <li onClick={() => setSelectedCategory('DESGINE INTERIEUR')} className="cursor-pointer">
+            {selectedCategory === 'DESGINE INTERIEUR' && (
+              <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
+            )}
+            DESGINE INTERIEUR
+          </li>
+          <li onClick={() => setSelectedCategory('ARCHITECTURE')} className="cursor-pointer">
+            {selectedCategory === 'ARCHITECTURE' && (
+              <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
+            )}
+            ARCHITECTURE
+          </li>
+          <li onClick={() => setSelectedCategory('CARRELAGE')} className="cursor-pointer">
+            {selectedCategory === 'CARRELAGE' && (
+              <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
+            )}
+            CARRELAGE
+          </li>
+          <li onClick={() => setSelectedCategory('BÂTIMENTS')} className="cursor-pointer">
+            {selectedCategory === 'BÂTIMENTS' && (
+              <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
+            )}
+            BÂTIMENTS
+          </li>
+          <li onClick={() => setSelectedCategory('RENOVATION')} className="cursor-pointer">
+            {selectedCategory === 'RENOVATION' && (
+              <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
+            )}
+            RENOVATION
+          </li>
         </ul>
 
         {/* Section Projects Cards */}
