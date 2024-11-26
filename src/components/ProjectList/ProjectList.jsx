@@ -21,6 +21,7 @@ import image19 from "../../assets/images/img-projet/image19.webp";
 import image20 from "../../assets/images/img-projet/image20.webp";
 import image21 from "../../assets/images/img-projet/image21.webp";
 import image22 from "../../assets/images/img-projet/image22.webp";
+import "./ProjectList.css";
 
 function ProjectList() {
   const [selectedCategory, setSelectedCategory] = useState('TOUT');
@@ -64,31 +65,56 @@ function ProjectList() {
             )}
             TOUT
           </li>
-          <li onClick={() => setSelectedCategory('DESGINE INTERIEUR')} className="cursor-pointer">
+          <li
+            onClick={() => setSelectedCategory('DESGINE INTERIEUR')}
+            className={`cursor-pointer transition-transform duration-300 ${
+              selectedCategory === 'DESGINE INTERIEUR' ? 'transform scale-105' : ''
+            }`}
+          >
             {selectedCategory === 'DESGINE INTERIEUR' && (
               <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
             )}
             DESGINE INTERIEUR
           </li>
-          <li onClick={() => setSelectedCategory('ARCHITECTURE')} className="cursor-pointer">
+          <li
+            onClick={() => setSelectedCategory('ARCHITECTURE')}
+            className={`cursor-pointer transition-transform duration-300 ${
+              selectedCategory === 'ARCHITECTURE' ? 'transform scale-105' : ''
+            }`}
+          >
             {selectedCategory === 'ARCHITECTURE' && (
               <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
             )}
             ARCHITECTURE
           </li>
-          <li onClick={() => setSelectedCategory('CARRELAGE')} className="cursor-pointer">
+          <li
+            onClick={() => setSelectedCategory('CARRELAGE')}
+            className={`cursor-pointer transition-transform duration-300 ${
+              selectedCategory === 'CARRELAGE' ? 'transform scale-105' : ''
+            }`}
+          >
             {selectedCategory === 'CARRELAGE' && (
               <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
             )}
             CARRELAGE
           </li>
-          <li onClick={() => setSelectedCategory('BÂTIMENTS')} className="cursor-pointer">
+          <li
+            onClick={() => setSelectedCategory('BÂTIMENTS')}
+            className={`cursor-pointer transition-transform duration-300 ${
+              selectedCategory === 'BÂTIMENTS' ? 'transform scale-105' : ''
+            }`}
+          >
             {selectedCategory === 'BÂTIMENTS' && (
               <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
             )}
             BÂTIMENTS
           </li>
-          <li onClick={() => setSelectedCategory('RENOVATION')} className="cursor-pointer">
+          <li
+            onClick={() => setSelectedCategory('RENOVATION')}
+            className={`cursor-pointer transition-transform duration-300 ${
+              selectedCategory === 'RENOVATION' ? 'transform scale-105' : ''
+            }`}
+          >
             {selectedCategory === 'RENOVATION' && (
               <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
             )}
