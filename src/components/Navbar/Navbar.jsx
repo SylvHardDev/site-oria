@@ -75,6 +75,7 @@ export default function Navbar() {
     <nav
       className={`w-full bg-white  shadow-lg fixed top-0 left-0  z-[999] transition-all ease-in-out ${scrolled ? "h-16" : "h-20"
         }`}
+      id="navbar"
     >
       <div className="container h-full  mx-auto px-6 flex items-center justify-between lg:justify-evenly">
         {/* Logo */}
@@ -158,7 +159,7 @@ export default function Navbar() {
         <div
           ref={menuRef}
           className={`lg:hidden z-10 bg-slate-50 p-4 shadow-md fixed top-16 left-0 w-full transition-transform duration-300 ease-in-out ${isOpen ? "translate-y-0" : "-translate-y-full"
-            }`}
+            } ${isOpen ? "animate-slide-down" : "animate-slide-up"}`}
         >
           <Link
             to="/"
