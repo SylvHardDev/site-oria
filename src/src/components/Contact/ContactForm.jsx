@@ -1,23 +1,64 @@
+import { useRef } from "react";
 import mail from "../../assets/icons/MAIL.png";
 import maps from "../../assets/icons/location-vert.png";
 import phone from "../../assets/icons/phone-vert.png";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
+import emailjs from "@emailjs/browser";
 
 function ContactForm() {
+
+  const refForm = useRef();
+
+
+//   const sendEmail = (e) => {
+//     e.preventDefault()
+//     emailjs
+//         .sendForm(
+//             'gmail_service',
+//             'contact_form',
+//             refForm.current,
+//             '6VmcoCshUXWRSB9uv'
+//         )
+//         .then(() => {
+//             alert('Message envoyé avec succès!')
+//             window.location.reload(false)
+//         }, () => {
+//             alert("Erreur d'envoi, veuillez réessayer")
+//         })
+// }
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+    emailjs
+        .sendForm(
+            'service_fhdwpwa',
+            'template_llspnze',
+            refForm.current,
+            'yDdLGO_oO4v91EyZX' 
+        )
+        .then(() => {
+            alert('Message envoyé avec succès!')
+            window.location.reload(false)
+        }, () => {
+            alert("Erreur d'envoi, veuillez réessayer")
+        })
+}
+
   return (
     <div className="text-sm items-center justify-center w-full py-10 px-4 md:px-32 ">
       <div className="container mx-auto pb-10 lg:flex lg:space-x-10 lg:items-start">
         {/* Section Formulaire et informations de contact */}
         <div className="flex flex-col md:flex-row gap-10 w-full mx-auto my-auto">
           {/* Formulaire de contact */}
-          <form className="space-y-4 lg:w-1/2">
+          <form className="space-y-4 lg:w-1/2" ref={refForm} onSubmit={sendEmail}>
             <div className="flex space-x-4">
               <Input
                 label="Nom"
                 placeholder="Nom"
                 className="flex-1"
+                name="name"
                 required
               />
               <Input
@@ -26,6 +67,7 @@ function ContactForm() {
                 type="email"
                 className="flex-1"
                 required
+                name="email"
               />
             </div>
 
@@ -35,6 +77,7 @@ function ContactForm() {
               rows={4}
               className="w-full"
               required
+              name="message"
             />
 
             <Button type="submit" className="w-full mt-4 bg-green-700">
