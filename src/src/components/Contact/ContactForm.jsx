@@ -11,30 +11,12 @@ function ContactForm() {
 
   const refForm = useRef();
 
-
-//   const sendEmail = (e) => {
-//     e.preventDefault()
-//     emailjs
-//         .sendForm(
-//             'gmail_service',
-//             'contact_form',
-//             refForm.current,
-//             '6VmcoCshUXWRSB9uv'
-//         )
-//         .then(() => {
-//             alert('Message envoyé avec succès!')
-//             window.location.reload(false)
-//         }, () => {
-//             alert("Erreur d'envoi, veuillez réessayer")
-//         })
-// }
-
   const sendEmail = (e) => {
     e.preventDefault()
     emailjs
         .sendForm(
-            'service_fhdwpwa',
-            'template_llspnze',
+            'Service_oria',
+            'template_ql97xot',
             refForm.current,
             'yDdLGO_oO4v91EyZX' 
         )
