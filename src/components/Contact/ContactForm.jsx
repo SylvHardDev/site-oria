@@ -22,6 +22,7 @@ function ContactForm() {
         )
         .then(() => {
             alert('Message envoyé avec succès!')
+            refForm.current.reset()
             // window.location.reload(false)
         }, () => {
             alert("Erreur d'envoi, veuillez réessayer")
