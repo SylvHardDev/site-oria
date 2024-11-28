@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import burger from "../../assets/icons/burger-bar.png";
 import search from "../../assets/icons/search.png";
-import Logo from "../../assets/logo/logo_blue.png";
+import Logo from "../../assets/logo/svg-oria.png";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -77,14 +77,14 @@ export default function Navbar() {
         }`}
       id="navbar"
     >
-      <div className="container h-full  mx-auto px-6 flex items-center justify-between lg:justify-evenly">
+      <div className="container h-full mx-auto px-6 flex items-center justify-between lg:justify-evenly">
         {/* Logo */}
-        <div className="">
+        <div className="div-logo">
           <Link to="/" onClick={handleLinkClick}>
             <img
               src={Logo}
               alt="Logo-oria"
-              className={`transition-all ease-in-out ${scrolled ? "w-48" : "w-52 md:w-72"
+              className={`logo-oria transition-all ease-in-out ${scrolled ? "w-14" : "w-14 md:w-16"
                 } `}
               id="arrow-top"
             />
