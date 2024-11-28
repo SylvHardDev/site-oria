@@ -21,6 +21,11 @@ import image19 from "../../assets/images/img-projet/image19.webp";
 import image20 from "../../assets/images/img-projet/image20.webp";
 import image21 from "../../assets/images/img-projet/image21.webp";
 import image22 from "../../assets/images/img-projet/image22.webp";
+import image23 from "../../assets/images/img-projet/image23.webp";
+import image24 from "../../assets/images/img-projet/image24.webp";
+import image25 from "../../assets/images/img-projet/image25.webp";
+import image26 from "../../assets/images/img-projet/image26.webp";
+import image27 from "../../assets/images/img-projet/image27.webp";
 import "./ProjectList.css";
 
 function ProjectList() {
@@ -49,6 +54,11 @@ function ProjectList() {
     { src: image20, category: 'BÂTIMENTS' },
     { src: image21, category: 'RENOVATION' },
     { src: image22, category: 'DESGINE INTERIEUR' },
+    { src: image23, category: 'ARCHITECTURE' },
+    { src: image24, category: 'CARRELAGE' },
+    { src: image25, category: 'BÂTIMENTS' },
+    { src: image26, category: 'RENOVATION' },
+    { src: image27, category: 'DESGINE INTERIEUR' },
   ];
 
   const filteredImages = filter === 'TOUT'
