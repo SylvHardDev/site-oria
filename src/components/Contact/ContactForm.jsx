@@ -1,4 +1,6 @@
 import { useRef } from "react";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import mail from "../../assets/icons/MAIL.png";
 import maps from "../../assets/icons/location-vert.png";
 import phone from "../../assets/icons/phone-vert.png";
@@ -21,16 +23,36 @@ function ContactForm() {
             'yDdLGO_oO4v91EyZX' 
         )
         .then(() => {
-            alert('Message envoyé avec succès!')
+            toast.success('Message envoyé avec succès!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+            });
             refForm.current.reset()
-            // window.location.reload(false)
-        }, () => {
-            alert("Erreur d'envoi, veuillez réessayer")
+        })
+        .catch((error) => {
+            console.error("Erreur d'envoi:", error)
+            toast.error("Erreur d'envoi, veuillez réessayer", {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+            });
         })
 }
 
   return (  
     <div className="text-sm items-center justify-center w-full py-10 px-4 md:px-32 ">
+      <ToastContainer />
       <div className="container mx-auto pb-10 lg:flex lg:space-x-10 lg:items-start">
         {/* Section Formulaire et informations de contact */}
         <div className="flex flex-col md:flex-row gap-10 w-full mx-auto my-auto">
