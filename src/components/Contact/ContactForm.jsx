@@ -22,13 +22,13 @@ function ContactForm() {
         )
         .then(() => {
             alert('Message envoyé avec succès!')
-            window.location.reload(false)
+            // window.location.reload(false)
         }, () => {
             alert("Erreur d'envoi, veuillez réessayer")
         })
 }
 
-  return (
+  return (  
     <div className="text-sm items-center justify-center w-full py-10 px-4 md:px-32 ">
       <div className="container mx-auto pb-10 lg:flex lg:space-x-10 lg:items-start">
         {/* Section Formulaire et informations de contact */}
