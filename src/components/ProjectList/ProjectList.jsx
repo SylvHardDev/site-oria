@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import image1 from "../../assets/images/img-projet/image1.webp";
 // import image2 from "../../assets/images/img-projet/image2.webp";
 import image3 from "../../assets/images/img-projet/image3.webp";
@@ -147,7 +147,7 @@ function ProjectList() {
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <img
-                 className="w-full h-auto object-cover shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+                className="w-full h-auto object-cover shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
                 src={image.src}
                 alt={`Image ${index + 1}`}
               />
