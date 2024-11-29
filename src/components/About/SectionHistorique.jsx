@@ -11,8 +11,8 @@ function SectionHistorique() {
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Titre principal */}
           <div>
-            <h2 className="text-green-600 text-xs font-semibold uppercase mb-2">
-              <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
+            <h2 className="text-oriaTheme text-xs font-semibold uppercase mb-2">
+              <span className="inline-block w-2 h-2 bg-oriaTheme mr-2"></span>
               Notre Histoire
             </h2>
             <h3 className="text-xl font-bold mb-8">LE FONDEMENT DU GROUPE</h3>
@@ -63,8 +63,8 @@ function SectionHistorique() {
 
           {/* Fonctionnalités */}
           <div>
-            <h2 className="text-green-600 text-xs font-semibold uppercase mb-2">
-              <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
+            <h2 className="text-oriaTheme text-xs font-semibold uppercase mb-2">
+              <span className="inline-block w-2 h-2 bg-oriaTheme mr-2"></span>
               Nous sommes qualifiés
             </h2>
             <h1 className="text-xl font-bold mb-8">NOS FONCTIONNALITÉS</h1>
@@ -72,7 +72,7 @@ function SectionHistorique() {
               {/* Fonctionnalité 1 */}
               <div className="border bg-slate-50 rounded-lg p-6">
                 <div className="flex flex-col mb-4">
-                  <span className="text-green-600 text-3xl">
+                  <span className="text-oriaTheme text-3xl">
                     <img src={clock} className="w-8 h-8" alt="montre" />
                   </span>
                   <h3 className="pt-2 font-semibold text-md">
@@ -87,7 +87,7 @@ function SectionHistorique() {
               {/* Fonctionnalité 2 */}
               <div className="border bg-slate-50 rounded-lg p-6">
                 <div className="flex flex-col mb-4">
-                  <span className="text-green-600 text-3xl">
+                  <span className="text-oriaTheme text-3xl">
                     <img src={user_star} className="w-8 h-8" alt="user" />
                   </span>
                   <h3 className="pt-2 font-semibold text-md">
@@ -102,7 +102,7 @@ function SectionHistorique() {
               {/* Fonctionnalité 3 */}
               <div className="border bg-slate-50 rounded-lg p-6">
                 <div className="flex flex-col mb-4">
-                  <span className="text-green-600 text-3xl">
+                  <span className="text-oriaTheme text-3xl">
                     <img src={money} className="w-9 h-9" alt="argent" />
                   </span>
                   <h3 className="pt-2 font-semibold text-md">
@@ -117,7 +117,7 @@ function SectionHistorique() {
               {/* Fonctionnalité 4 */}
               <div className="border bg-slate-50 rounded-lg p-6">
                 <div className="flex flex-col mb-4">
-                  <span className="text-green-600 text-3xl">
+                  <span className="text-oriaTheme text-3xl">
                     <img src={star} className="w-9 h-9" alt="etoile" />
                   </span>
                   <h3 className="pt-2 font-semibold text-md">
