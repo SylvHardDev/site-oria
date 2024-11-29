@@ -52,7 +52,7 @@ export default function Footer() {
               <h4 className="text-sm font-semibold">ADRESSE</h4>
               <p className="text-xs text-slate-400">Antananarivo</p>
               <p className="text-xs text-slate-400">
-                ........................................................................
+                Soavimasoandro Lot II H 115 D
               </p>
             </div>
           </div>
@@ -80,7 +80,7 @@ export default function Footer() {
             <h4 className="text-sm font-semibold">Nos horaires</h4>
             <p className="text-xs pt-4 ">Jours Ouvrables :</p>
             <p className="text-xs pl-4 text-gray-400">
-              Lundi - Vendredi : heure
+              Lundi - Vendredi : 8h-17h30
             </p>
             <p className="text-xs pl-4 text-gray-400">Samedi : heure</p>
             <p className="text-xs pt-4">Période de vacances :</p>
@@ -208,7 +208,7 @@ export default function Footer() {
         <div className="left p-4 lg:px-32 w-full md:w-1/2 h-full flex justify-center flex-col ">
           <p>
             Groupe Oria © Tous droits réservés. Designed by{" "}
-            <Link to="https://monde-parallele.company.site" className="text-green-500 underline">
+            <Link to="https://monde-parallele.company.site" className="text-green-500 underline" target="_blank" rel="noopener noreferrer">
               Monde Parallèle Agency
             </Link>
           </p>
