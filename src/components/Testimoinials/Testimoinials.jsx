@@ -31,7 +31,7 @@ function Testimoinials() {
               retours positifs confirment notre expertise et notre capacité à
               répondre à leurs besoins spécifiques.
             </p>
-            <Button className="inline-block backdrop-grayscale-0 w-40 bg-green-600 hover:bg-slate-900">
+            <Button className="inline-block backdrop-grayscale-0 w-40 bg-oriaTheme hover:bg-slate-900 transition duration-300 ease-in-out">
               PLUS
             </Button>
           </div>
@@ -67,7 +67,7 @@ function Testimoinials() {
                 />
                 <div>
                   <h4 className="text-white">Nom de la personne</h4>
-                  <p className="text-green-500 text-xs">
+                  <p className="text-oriaTheme text-xs">
                     Poste, Nom de la société
                   </p>
                 </div>
@@ -94,7 +94,7 @@ function Testimoinials() {
                 />
                 <div>
                   <h4 className="text-white">Nom de la personne</h4>
-                  <p className="text-green-500 text-xs">
+                  <p className="text-oriaTheme text-xs">
                     Poste, Nom de la société
                   </p>
                 </div>
@@ -121,7 +121,7 @@ function Testimoinials() {
                 />
                 <div>
                   <h4 className="text-white">Nom de la personne</h4>
-                  <p className="text-green-500 text-xs">
+                  <p className="text-oriaTheme text-xs">
                     Poste, Nom de la société
                   </p>
                 </div>
@@ -148,7 +148,7 @@ function Testimoinials() {
                 />
                 <div>
                   <h4 className="text-white">Nom de la personne</h4>
-                  <p className="text-green-500 text-xs">
+                  <p className="text-oriaTheme text-xs">
                     Poste, Nom de la société
                   </p>
                 </div>

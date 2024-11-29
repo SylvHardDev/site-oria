@@ -3,6 +3,7 @@
 @tailwind utilities;
 @layer base {
   :root {
+    --oria-theme: #289850;
     --blue-oria: #289850;
     --green-oria: #29276c;
     --gray-oria: #f6f6f6;
