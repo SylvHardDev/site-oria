@@ -24,11 +24,12 @@ export default function FilialeSCI() {
           <h2 className="text-3xl font-bold text-gray-900">SCI DM</h2>
           <div className="flex flex-col md:flex-row justify-between">
             <p className="my-2 text-[15px] md:w-2/3 text-gray-400">
-              SCI DM est une société immobilière de gestion des propriétés,
+              {/* SCI DM est une société immobilière de gestion des propriétés,
               entièrement dédiée à la personnalisation de ses services. Que ce
               soit pour la gestion locative, l entretien régilier ou la
               valorisation de votre bien, nous mettons notre expertise au
-              sèrvice de vos besoins spécifiques.
+              sèrvice de vos besoins spécifiques. */}
+              Promotion immobilière : vente et/ou location terrain et immeuble (Appartement, Villa, bureaux, box commercial, dépôt)
             </p>
             <Link to="/projects" onClick={scrollToTop}>
               <Button className="inline-block backdrop-grayscale-0 w-40 bg-oriaTheme hover:bg-oriathemeBlack transition duration-300">
