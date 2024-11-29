@@ -208,7 +208,7 @@ export default function Footer() {
         <div className="left p-4 lg:px-32 w-full md:w-1/2 h-full flex justify-center flex-col ">
           <p>
             Groupe Oria © Tous droits réservés. Designed by{" "}
-            <Link to="#" className="text-green-500 underline">
+            <Link to="https://monde-parallele.company.site" className="text-green-500 underline">
               Monde Parallèle Agency
             </Link>
           </p>
