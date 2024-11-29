@@ -17,7 +17,7 @@ function SectionNotreEquipe() {
               des solutions innovantes et de qualité pour le secteur de la
               construction.
             </p>
-            <Button className="inline-block backdrop-grayscale-0 w-40 bg-blue-900">
+            <Button className="inline-block backdrop-grayscale-0 w-40 bg-oriathemeBlack">
               VOIR TOUT
             </Button>
           </div>
