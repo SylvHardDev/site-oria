@@ -17,7 +17,7 @@ function Projects() {
         {/* Section title */}
         <div className="mb-8">
           <h3 className="text-blue-900 text-[12px] font-semibold uppercase flex items-center">
-            <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
+            <span className="inline-block w-2 h-2 bg-oriaTheme mr-2"></span>
             DES PROJETS QUI PRENNENT VIE
           </h3>
           <h2 className="text-3xl font-bold text-gray-900">NOS PROJETS</h2>
@@ -50,7 +50,7 @@ function Projects() {
               <p className="text-[13px] mb-6">Architecture</p>
               <h4>NOUVEAU BÂTIMENT</h4>
               <Link to="/projects" onClick={scrollToTop}>
-                <Button className="shadow-4xl mt-6 bg-green-600 text-white px-4 py-2 rounded-sm">
+                <Button className="shadow-4xl mt-6 bg-oriaTheme hover:bg-oriathemeBlack text-white px-4 py-2 rounded-sm transition duration-300 ease-in-out">
                   Voir tout nos projets
                 </Button>
               </Link>
