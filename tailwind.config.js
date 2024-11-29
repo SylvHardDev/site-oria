@@ -15,6 +15,9 @@ export default {
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
+				oriaRed: "#C1272D",
+				oriaBlue: "#29276C",
+				oriaGreen: "#289850",
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
