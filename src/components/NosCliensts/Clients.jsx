@@ -8,7 +8,7 @@ function Clients() {
         {/* Section title */}
         <div className="mb-8">
           <h3 className="text-blue-900 text-[12px] font-semibold uppercase flex items-center">
-            <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
+            <span className="inline-block w-2 h-2 bg-oriaTheme mr-2 ease-in-out"></span>
             ILS NOUS FONT FONFIANCE
           </h3>
           <h2 className="text-3xl font-bold text-gray-900">NOS CLIENTS</h2>
@@ -18,7 +18,7 @@ function Clients() {
               particuliers suhaite acquérir leur résidence principale jusqu aux
               entreprises à la recherche de locaux professionnels.
             </p>
-            <Button className="inline-block backdrop-grayscale-0 w-40 bg-green-600">
+            <Button className="inline-block backdrop-grayscale-0 w-40 bg-oriaTheme hover:bg-oriathemeBlack transition duration-300">
               TOUT NOS CLIENTS
             </Button>
           </div>
@@ -29,19 +29,19 @@ function Clients() {
             <h3 className="bordel text-blue-800 text-[25px]">LOGO</h3>
           </div>
           <div className="logo border h-[100%] basis-1/3 md:w-[100%] flex items-center justify-center">
-            <h3 className="bordel text-green-500 text-[25px]">LOGO</h3>
+            <h3 className="bordel text-oriaTheme text-[25px]">LOGO</h3>
           </div>
           <div className="logo border h-[100%] basis-1/3 md:w-[100%] flex items-center justify-center">
             <h3 className="bordel text-blue-800 text-[25px]">LOGO</h3>
           </div>
           <div className="logo border h-[100%] basis-1/3 md:w-[100%] flex items-center justify-center">
-            <h3 className="bordel text-green-500 text-[25px]">LOGO</h3>
+            <h3 className="bordel text-oriaTheme text-[25px]">LOGO</h3>
           </div>
           <div className="logo border h-[100%] basis-1/3 md:w-[100%] flex items-center justify-center">
             <h3 className="bordel text-blue-800 text-[25px]">LOGO</h3>
           </div>
           <div className="logo border h-[100%] basis-1/3 md:w-[100%] flex items-center justify-center">
-            <h3 className="bordel text-green-500 text-[25px]">LOGO</h3>
+            <h3 className="bordel text-oriaTheme text-[25px]">LOGO</h3>
           </div>
         </div>
       </div>
