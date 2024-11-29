@@ -31,7 +31,7 @@ export default function FilialeSCI() {
               sèrvice de vos besoins spécifiques.
             </p>
             <Link to="/projects" onClick={scrollToTop}>
-              <Button className="inline-block backdrop-grayscale-0 w-40 bg-green-600">
+              <Button className="inline-block backdrop-grayscale-0 w-40 bg-oriaTheme hover:bg-oriathemeBlack transition duration-300">
                 Nos projets
               </Button>
             </Link>
@@ -90,7 +90,7 @@ export default function FilialeSCI() {
               projets immobiliers, vous garantissent une gestion serein et
               efficace.
             </p>
-            <Button className="mt-6 bg-green-600 text-white px-4 py-2 rounded-sm">
+            <Button className="mt-6 bg-oriaTheme text-white px-4 py-2 rounded-sm">
               Lire plus
             </Button>
           </div>
@@ -104,7 +104,7 @@ export default function FilialeSCI() {
             personnalisé, adapté à vos besoins spécifique.
           </p>
           <Link to="/contact" onClick={scrollToTop}>
-            <Button className="bg-blue-900 w-40">COLLABORONS</Button>
+            <Button className="bg-oriathemeBlack w-40">COLLABORONS</Button>
           </Link>
         </div>
         <div className="logo w-full m-0">
