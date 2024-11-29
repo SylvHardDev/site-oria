@@ -28,9 +28,10 @@ export default function FilialeHCM() {
           <h2 className="text-3xl font-bold text-gray-900">HCM</h2>
           <div className="flex flex-col md:flex-row justify-between">
             <p className="my-2 text-[15px] md:w-2/3 text-gray-400">
-              HCM (Habitat & Constructions de Madagascar) s&apos;engage à offrir des
+              {/* HCM (Habitat & Constructions de Madagascar) s&apos;engage à offrir des
               solutions innovantes et de qualité pour le secteur de la
-              construction.
+              construction. */}
+              Terrassement, Assainissement, Construction Gros œuvre, Travaux de second Œuvre, Aménagement extérieur (Pavage, Espace vert,…). Agréer par SOCOTEC, APAVE, Suivi par LNTPB
             </p>
             <Link to="/projects" onClick={scrollToTop}>
               <Button className="inline-block backdrop-grayscale-0 w-40 bg-oriaTheme hover:bg-oriathemeBlack transition duration-300">
