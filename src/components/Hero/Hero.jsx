@@ -27,15 +27,9 @@ function Hero() {
       >
         <CarouselContent className="text-white md:h-60 text-center">
           <CarouselItem className="flex flex-col items-center justify-around cursor-pointer">
-            <p>
-              Le Pionnier de la construction et de l &apos;immobilier à
-              Madagascar
-            </p>
             <h1 className="text-4xl lg:text-7xl tracking-wide">GROUPE ORIA</h1>
             <p className="md:w-2/3">
-              Le <span>groupe ORIA</span> regroupe des entités spécialisées dans
-              les secteurs de la construction et de la gestion immobilière à
-              Madagascar
+              <span>ORIA</span> regroupe les services fournis par HCM et SCI DM
             </p>
             <div className="flex h-24 flex-col items-center justify-around md:flex-row md:justify-evenly md:w-[70%] lg:w-[50%] ">
               <Link to="/contact">
@@ -49,15 +43,9 @@ function Hero() {
             </div>
           </CarouselItem>
           <CarouselItem className="flex flex-col items-center justify-around cursor-pointer">
-            <p>
-              Le Pionnier de la construction et de l &apos;immobilier à
-              Madagascar
-            </p>
-            <h1 className="text-4xl lg:text-7xl tracking-wide">GROUPE ORIA</h1>
+            <h1 className="text-4xl lg:text-7xl tracking-wide">HCM</h1>
             <p className="md:w-2/3">
-              Le <span>groupe ORIA</span> regroupe des entités spécialisées dans
-              les secteurs de la construction et de la gestion immobilière à
-              Madagascar
+            Terrassement, Assainissement, Construction Gros œuvre, Travaux de second Œuvre, Aménagement extérieur (Pavage, Espace vert,…). Agréer par SOCOTEC, APAVE, Suivi par LNTPB
             </p>
             <div className="flex h-24 flex-col items-center justify-around md:flex-row md:justify-evenly md:w-[70%] lg:w-[50%] ">
               <Link to="/contact">
@@ -71,15 +59,13 @@ function Hero() {
             </div>
           </CarouselItem>
           <CarouselItem className="flex flex-col items-center justify-around cursor-pointer">
-            <p>
+            {/* <p>
               Le Pionnier de la construction et de l &apos;immobilier à
               Madagascar
-            </p>
-            <h1 className="text-4xl lg:text-7xl tracking-wide">GROUPE ORIA</h1>
+            </p> */}
+            <h1 className="text-4xl lg:text-7xl tracking-wide">SCI DM</h1>
             <p className="md:w-2/3">
-              Le <span>groupe ORIA</span> regroupe des entités spécialisées dans
-              les secteurs de la construction et de la gestion immobilière à
-              Madagascar
+            Promotion immobilière : vente et/ou location terrain et immeuble (Appartement, Villa, bureaux, box commercial, dépôt)
             </p>
             <div className="flex h-24 flex-col items-center justify-around md:flex-row md:justify-evenly md:w-[70%] lg:w-[50%] ">
               <Link to="/contact">
