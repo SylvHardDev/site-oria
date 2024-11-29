@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import burger from "../../assets/icons/burger-bar.png";
-import search from "../../assets/icons/search.png";
+// import search from "../../assets/icons/search.png";
 import Logo from "../../assets/logo/svg-oria.png";
 import "./Navbar.css";
 
