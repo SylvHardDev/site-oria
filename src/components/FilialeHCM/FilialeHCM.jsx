@@ -22,18 +22,18 @@ export default function FilialeHCM() {
         {/* Titre de la section */}
         <div className="mb-8">
           <h3 className="text-blue-900 text-[12px] font-semibold uppercase flex items-center">
-            <span className="inline-block w-2 h-2 bg-green-600 mr-2"></span>
+            <span className="inline-block w-2 h-2 bg-oriaTheme mr-2"></span>
             ENTITÉS DU GROUPE
           </h3>
           <h2 className="text-3xl font-bold text-gray-900">HCM</h2>
           <div className="flex flex-col md:flex-row justify-between">
             <p className="my-2 text-[15px] md:w-2/3 text-gray-400">
-              HCM (Habitat & Constructions de Madagascar) s'engage à offrir des
+              HCM (Habitat & Constructions de Madagascar) s&apos;engage à offrir des
               solutions innovantes et de qualité pour le secteur de la
               construction.
             </p>
             <Link to="/projects" onClick={scrollToTop}>
-              <Button className="inline-block backdrop-grayscale-0 w-40 bg-green-600">
+              <Button className="inline-block backdrop-grayscale-0 w-40 bg-oriaTheme hover:bg-oriathemeBlack transition duration-300">
                 Nos projets
               </Button>
             </Link>
@@ -45,11 +45,11 @@ export default function FilialeHCM() {
           {/* Carte 1 */}
           <div className="bg-blue-800 text-center text-white p-6 rounded-sm">
             <p className="text-[13px]">
-              HCM, en tant qu'acteur majeur du BTP dans le pays, se spécialise
-              dans le bâtiment, le génie civil, les réseaux, les ouvrages d'art,
-              et les métiers spécialisés pour le développement et l'immobilier.
+              HCM, en tant qu&apos;acteur majeur du BTP dans le pays, se spécialise
+              dans le bâtiment, le génie civil, les réseaux, les ouvrages d&apos;art,
+              et les métiers spécialisés pour le développement et l&apos;immobilier.
             </p>
-            <Button className="mt-6 bg-green-600 text-white px-4 py-2 rounded-sm">
+            <Button className="mt-6 bg-oriaTheme text-white px-4 py-2 rounded-sm">
               Lire plus
             </Button>
           </div>
@@ -87,11 +87,11 @@ export default function FilialeHCM() {
         <div className="p-4 mt-12 rounded-sm flex flex-col md:flex-row items-center justify-between border">
           <p className="my-2 text-[15px] md:w-2/3 text-gray-500">
             Confiez vos projets immobiliers à HCM : notre expertise dans le
-            bâtiment, le génie civil et les ouvrages d'art, associée à notre
+            bâtiment, le génie civil et les ouvrages d&apos;art, associée à notre
             engagement qualité, garantit la réussite de vos réalisations.
           </p>
           <Link to="/contact" onClick={scrollToTop}>
-            <Button className="bg-blue-900 w-40">COLLABORONS</Button>
+            <Button className="bg-oriathemeBlack w-40">COLLABORONS</Button>
           </Link>
         </div>
         <div className="logo w-full m-0">
