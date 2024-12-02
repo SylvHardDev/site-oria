@@ -2,9 +2,9 @@ import { useState } from 'react';
 import image1 from "../../assets/images/img-projet/image1.webp";
 // import image2 from "../../assets/images/img-projet/image2.webp";
 import image3 from "../../assets/images/img-projet/image3.webp";
-import image4 from "../../assets/images/img-projet/image4.webp";
+// import image4 from "../../assets/images/img-projet/image4.webp";
 import image5 from "../../assets/images/img-projet/image5.webp";
-import image6 from "../../assets/images/img-projet/image6.webp";
+// import image6 from "../../assets/images/img-projet/image6.webp";
 import image7 from "../../assets/images/img-projet/image7.webp";
 import image8 from "../../assets/images/img-projet/image8.webp";
 import image9 from "../../assets/images/img-projet/image9.webp";
@@ -35,9 +35,9 @@ function ProjectList() {
   const images = [
     { src: image1, category: 'BÂTIMENTS' },
     { src: image3, category: 'DESGINE INTERIEUR' },
-    { src: image4, category: 'DESGINE INTERIEUR' },
+    // { src: image4, category: 'DESGINE INTERIEUR' },
     { src: image5, category: 'DESGINE INTERIEUR' },
-    { src: image6, category: 'DESGINE INTERIEUR' },
+    // { src: image6, category: 'DESGINE INTERIEUR' },
     { src: image7, category: 'BÂTIMENTS' },
     { src: image8, category: 'DESGINE INTERIEUR' },
     { src: image9, category: 'RENOVATION' },
