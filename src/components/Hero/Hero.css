@@ -7,11 +7,12 @@ h1 {
     font-family: "Helvetica-Neue-heavy";
 }
 #hero {
-    background: url(../../assets/images/scene-construction-site-with-equipment.webp);
+    background: url(../../assets/images/bg_home_hero.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
+    background-attachment: fixed;
 }
 
 .layer {
