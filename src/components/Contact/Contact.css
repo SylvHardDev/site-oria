@@ -5,7 +5,7 @@
 } 
 
 .contact-hero {
-  background: url(../../assets/images/illustration-construction-site.webp);
+  background: url(../../assets/images/bg_hero_contact.webp);
   background-attachment: fixed;
   background-position: bottom;
   /* background-position: center; */
@@ -27,7 +27,7 @@
 }
 
 .bg-image {
-  background: url("../../assets/images/illustration-construction-site.webp");
+  background: url("../../assets/images/bg_hero_contact.webp");
   background-position: center;
   background-size: cover;
 }
