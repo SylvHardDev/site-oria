@@ -3,7 +3,7 @@ import Home from "@/pages/Home"
 import Filiale from "@/pages/Filiale"
 import NotFound404 from "@/pages/NotFound404"
 import About from "@/pages/About"
-import MainLayout from "@/layout/MainLayout"
+import MainLayout from "@/layout/MainLayout"  
 import Contact from "@/pages/Contact"
 import NosProjet from "@/pages/NosProjet"
 
