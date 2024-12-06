@@ -22,9 +22,9 @@ function Clients() {
               particuliers suhaite acquérir leur résidence principale jusqu aux
               entreprises à la recherche de locaux professionnels.
             </p>
-            <Button className="inline-block backdrop-grayscale-0 w-40 bg-oriaTheme hover:bg-oriathemeBlack transition duration-300">
+            {/* <Button className="inline-block backdrop-grayscale-0 w-40 bg-oriaTheme hover:bg-oriathemeBlack transition duration-300">
               TOUT NOS CLIENTS
-            </Button>
+            </Button> */}
           </div>
         </div>
 
