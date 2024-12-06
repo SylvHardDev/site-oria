@@ -1,6 +1,9 @@
 import { Button } from "../ui/button";
 import "./Clients.css";
-
+import akoor from "../../assets/logo/akoor_logo.webp"
+import madstell from "../../assets/logo/madstell_logo.webp"
+import luceo from "../../assets/logo/luceo_logo_1.webp"
+import bricofer from "../../assets/logo/bricofer_logo.webp"
 
 function Clients() {
   return (
