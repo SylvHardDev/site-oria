@@ -32,7 +32,7 @@ function Hero() {
       id="hero"
       style={{
         background: isImageLoaded
-          ? `url(${bg_hero}) center/cover no-repeat`: "",
+          ? `url(${bg_hero}) center/cover no-repeat background-attachment: fixed background-position: bottom`: "",
       }}
     >
       {!isImageLoaded && (
