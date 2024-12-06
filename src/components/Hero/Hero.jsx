@@ -6,7 +6,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 // import Autoplay from "embla-carousel-autoplay";
-import { Button } from "../ui/button";
+import { Button } from "../ui/button";        
 import "./Hero.css";
 import { Link } from "react-router-dom";
 
@@ -29,7 +29,7 @@ function Hero() {
           <CarouselItem className="flex flex-col items-center justify-around cursor-pointer">
             <h1 className="text-4xl lg:text-7xl tracking-wide">GROUPE ORIA</h1>
             <p className="md:w-2/3">
-              <span>ORIA</span> regroupe les services fournis par HCM et SCI DM
+              <span>ORIA</span> regroupe les services fourni  s par HCM et SCI DM
             </p>
             <div className="flex h-24 flex-col items-center justify-around md:flex-row md:justify-evenly md:w-[70%] lg:w-[50%] ">
               <Link to="/contact">
