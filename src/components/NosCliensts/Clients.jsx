@@ -1,6 +1,7 @@
 import { Button } from "../ui/button";
 import "./Clients.css";
 
+
 function Clients() {
   return (
     <section className="bg-white py-20">
