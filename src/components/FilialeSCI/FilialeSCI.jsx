@@ -8,6 +8,7 @@ import logo_sci from "../../assets/logo/Logo_SCI_result.webp";
 import { Link } from "react-router-dom";
 
 export default function FilialeSCI() {
+  
   // Fonction pour faire défiler vers le haut
   const scrollToTop = () => {
     window.scrollTo({
