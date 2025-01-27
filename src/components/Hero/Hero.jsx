@@ -5,7 +5,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-// import Autoplay from "embla-carousel-autoplay";
+ import Autoplay from "embla-carousel-autoplay";
 import { Button } from "../ui/button";
 import "./Hero.css";
 import { Link } from "react-router-dom";
@@ -44,11 +44,11 @@ function Hero() {
       <div className="layer"></div>
       <Carousel
         className="w-2/3 md:h-60"
-      // plugins={[
-      //   Autoplay({
-      //     delay: 6000,
-      //   }),
-      // ]}
+       plugins={[
+         Autoplay({
+          delay: 6000,
+        }),
+       ]}
       >
         <CarouselContent className="text-white md:h-60 text-center">
           <CarouselItem className="flex flex-col items-center justify-around cursor-pointer">
