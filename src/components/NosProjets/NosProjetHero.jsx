@@ -33,9 +33,6 @@ function NosProjetHero() {
       <h1 className="reveal-delay reveal text-3xl md:text-5xl text-white">
         NOS PROJETS
       </h1>
-      <h3 className="reveal-delay reveal text-xs mt-3 text-white">
-        Accueil / Nos projets
-      </h3>
     </section>
   );
 }

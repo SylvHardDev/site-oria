@@ -1,7 +1,3 @@
-import clock from "../../assets/icons/clock.png";
-import money from "../../assets/icons/money.png";
-import star from "../../assets/icons/star.png";
-import user_star from "../../assets/icons/user-star.png";
 import photo_Historique from "../../assets/images/illustration-construction-site.webp";
 
 function SectionHistorique() {

@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import burger from "../../assets/icons/burger-bar.png";
-// import search from "../../assets/icons/search.png";
 import Logo from "../../assets/logo/svg-oria.png";
 import "./Navbar.css";
 
@@ -13,7 +12,7 @@ export default function Navbar() {
 
   const location = useLocation();
 
-  // Fonction pour gérer le clic en dehors du menu
+
   useEffect(() => {
     function handleClickOutside(event) {
       if (
@@ -23,26 +22,22 @@ export default function Navbar() {
         !burgerRef.current.contains(event.target) &&
         !menuRef.current.contains(event.target)
       ) {
-        setIsOpen(false); // Fermer le menu si le clic est en dehors du menu
+        setIsOpen(false);
       }
     }
-    // Ajouter l'événement de clic lorsque le menu est ouvert
     if (isOpen) {
       document.addEventListener("mousedown", handleClickOutside);
     } else {
       document.removeEventListener("mousedown", handleClickOutside);
     }
-    // Nettoyer l'événement lors du démontage du composant ou lorsque le menu se ferme
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isOpen]);
 
-  // Fonction pour détecter le défilement et changer le style de la navbar
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
-        // Change 100 pour ajuster quand la navbar change de style
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -57,18 +52,17 @@ export default function Navbar() {
     setIsOpen(false);
   }, [location]);
 
-  // Fonction pour scroll vers le haut
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"  // Pour un défilement fluide
+      behavior: "smooth" 
     });
   };
 
-  // Fonction pour gérer le clic sur un lien
+
   const handleLinkClick = () => {
     scrollToTop();
-    setIsOpen(false);  // Ferme le menu mobile si ouvert
+    setIsOpen(false);  
   };
 
   return (
@@ -135,15 +129,7 @@ export default function Navbar() {
             CONTACTS
           </Link>
         </div>
-
-        {/* Right Section: Search Icon & Mobile Menu Button */}
         <div className="flex items-center space-x-4">
-          {/* Search Icon */}
-          {/* <button className="recherche text-gray-600 hover:text-blue-600">
-            <img className="icon-loop" src={search} alt="icone recherche" />
-          </button> */}
-
-          {/* Mobile Menu Button */}
           <button
             ref={burgerRef}
             className="burger lg:hidden text-gray-600 hover:text-blue-600 focus:outline-none"
@@ -154,7 +140,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu - Only visible when menu button is clicked */}
       {isOpen && (
         <div
           ref={menuRef}

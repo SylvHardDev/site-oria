@@ -35,9 +35,6 @@ function ContactHero() {
       <h1 className="reveal reveal-delay text-3xl md:text-5xl text-white">
         CONTACTEZ-NOUS
       </h1>
-      <h3 className="reveal reveal-delay text-xs mt-3 text-white">
-        Accueil / Contacts
-      </h3>
     </section>
   );
 }
