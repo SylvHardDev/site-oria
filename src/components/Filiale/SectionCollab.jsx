@@ -9,9 +9,6 @@ function SectionCollab() {
           bâtiment, le génie civil et les ouvrages d art, associée à notre
           engagement qualité, garantit la réussite de vos réalisations.
         </p>
-        <Button className="bg-white text-blue-900 w-40 hover:text-white">
-          COLLABORONS
-        </Button>
       </div>
     </div>
   );
