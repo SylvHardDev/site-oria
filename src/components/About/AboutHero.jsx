@@ -31,9 +31,6 @@ function AboutHero() {
       <div className="about-layer"></div>
       <h3 className="reveal text-green-500 text-xs">QUI SOMME-NOUS?</h3>
       <h1 className="reveal reveal-delay text-5xl text-white">A propos</h1>
-      <h3 className="reveal reveal-delay text-xs mt-3 text-white">
-        Accueil / A propos
-      </h3>
     </section>
   );
 }

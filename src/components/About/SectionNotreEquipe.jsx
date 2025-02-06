@@ -1,5 +1,4 @@
 import visage from "../../assets/images/images-provisoir.jpg";
-import { Button } from "../ui/button";
 
 function SectionNotreEquipe() {
   return (
@@ -17,9 +16,6 @@ function SectionNotreEquipe() {
               des solutions innovantes et de qualité pour le secteur de la
               construction.
             </p>
-            <Button className="inline-block backdrop-grayscale-0 w-40 bg-oriathemeBlack">
-              VOIR TOUT
-            </Button>
           </div>
         </div>
         <div className="text-start grid md:grid-cols-2 lg:grid-cols-4 gap-6">

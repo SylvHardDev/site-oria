@@ -17,7 +17,7 @@ function Hero() {
 
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
-  const blurHash = "L6G*l}0002xB010h?FWU0:xB0i}?"; // lien BlurHash
+  const blurHash = "L6G*l}0002xB010h?FWU0:xB0i}?"; 
 
   useEffect(() => {
     const img = new Image();
@@ -84,10 +84,6 @@ function Hero() {
             </div>
           </CarouselItem>
           <CarouselItem className="flex flex-col items-center justify-around cursor-pointer">
-            {/* <p>
-              Le Pionnier de la construction et de l &apos;immobilier à
-              Madagascar
-            </p> */}
             <h1 className="text-4xl lg:text-7xl tracking-wide">SCI DM</h1>
             <p className="md:w-2/3">
               Promotion immobilière : vente et/ou location terrain et immeuble (Appartement, Villa, bureaux, box commercial, dépôt)
