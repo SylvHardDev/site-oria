@@ -37,9 +37,7 @@ function ProjectList() {
   const images = [
     { src: image1, category: 'BÂTIMENTS', blurhash: 'LTEyocR*RiWBO_jYoJofI^V@oJaz' },
     { src: image3, category: 'DESGINE INTERIEUR', blurhash: 'L8Fr|y?E_44m00~q%Lxu01RPD%%g' },
-    // { src: image4, category: 'DESGINE INTERIEUR' },
     { src: image5, category: 'DESGINE INTERIEUR', blurhash: 'LGKBH;00%MWA~V-=%2j@-=jEWBWB' },
-    // { src: image6, category: 'DESGINE INTERIEUR' },
     { src: image7, category: 'BÂTIMENTS', blurhash: 'LhIO-Ft6tS%M%%t7o#WB?ct7RjRj' },
     { src: image8, category: 'DESGINE INTERIEUR', blurhash: 'L5FY_lQ+V?xt00bK?bjYyZf-D$oz' },
     { src: image9, category: 'RENOVATION', blurhash: 'L3Ey#b-O00%W0C01p~Q^00^,4V_K' },
@@ -79,7 +77,6 @@ function ProjectList() {
   return (
     <section className="bg-white py-20 ">
       <div className="mx-auto flex flex-col items-center px-4 md:px-32">
-        {/* Section filtre */}
         <ul className="md:w-2/3 flex flex-wrap justify-evenly pb-5 filters-container">
           <li onClick={() => handleFilterChange('TOUT')} className="cursor-pointer filter-item">
             {filter === 'TOUT' && (

@@ -1,4 +1,3 @@
-// import bg_hero from "../../assets/images/scene-construction-site-with-equipment.jpg"
 import { useEffect, useState } from "react";
 import "./About.css";
 import bg_hero from "../../assets/images/bg_apropos_hero.webp"
@@ -8,7 +7,7 @@ function AboutHero() {
 
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
-  const blurHash = "LGIz-C~pD*^hD+slIpxZR*RkRkt6"; // lien BlurHash
+  const blurHash = "LGIz-C~pD*^hD+slIpxZR*RkRkt6";
 
   useEffect(() => {
     const img = new Image();

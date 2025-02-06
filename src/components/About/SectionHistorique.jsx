@@ -9,7 +9,6 @@ function SectionHistorique() {
     <section className="py-12 px-4 md:px-32">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-8">
-          {/* Titre principal */}
           <div>
             <h2 className="text-oriaTheme text-xs font-semibold uppercase mb-2">
               <span className="inline-block w-2 h-2 bg-oriaTheme mr-2"></span>
@@ -18,7 +17,6 @@ function SectionHistorique() {
             <h3 className="text-xl font-bold mb-8">LE FONDEMENT DU GROUPE</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
               <div className=" col-span-2 flex flex-col md:flex-row justify-between">
-                {/* Image */}
                 <div className="w-full md:w-[45%]">
                   <img
                     src={photo_Historique}
@@ -26,7 +24,6 @@ function SectionHistorique() {
                     className="w-full h-full rounded-lg"
                   />
                 </div>
-                {/* Texte */}
                 <div className="mt-4 md:w-[50%]">
                   <p className="text-sm mb-4">
                     Proin in iaculis neque. Pellentesque habitant morbi
